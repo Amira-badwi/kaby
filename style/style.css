@@ -84,7 +84,6 @@ nav input {
 .carousel.slide .carousel-item .dark_link {
   display: flex;
   height: 100%;
-  width: 100%;
   align-items: center;
   justify-content: center;
 }
@@ -491,17 +490,15 @@ h2.title {
   position: relative;
   color: white;
 }
-.banner .row div div p {
-  font-size: 22px;
-}
 .banner .row div div h1 {
   font-size: 50px;
+  margin: 30px 0px;
 }
 
 .overlay {
   width: 100%;
   height: 100%;
-  background-color: rgba(39, 31, 255, 0.288);
+  background-color: rgba(48, 47, 50, 0.288);
   position: absolute;
   top: 0px;
 }
@@ -649,6 +646,15 @@ footer .contacts_social {
     font-size: 20px;
   }
   .carousel.slide .carousel-item {
-    aspect-ratio: 1.5/1;
+    aspect-ratio: 1.3/1;
+  }
+  .banner .row {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgba(185, 184, 185, 0.1882352941);
+  }
+  .banner .row h1 {
+    font-size: 20px !important;
+    margin: 0px 0px 20px !important;
   }
 }/*# sourceMappingURL=style.css.map */
