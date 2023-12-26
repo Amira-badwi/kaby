@@ -158,7 +158,7 @@ nav input {
 
 /* Style the buttons inside the tab */
 .tab button {
-  max-width: 170px;
+  max-width: 90px;
   height: 50px;
   flex-grow: 2;
   background-color: rgba(221, 221, 221, 0);
@@ -212,27 +212,6 @@ h2.title {
   text-align: center;
   margin: 30px 0px;
   font-weight: 700;
-}
-
-.suggested .item .btns {
-  display: none;
-  justify-content: space-around;
-  position: absolute;
-  top: 45%;
-  width: 90%;
-}
-.suggested .item .btns button {
-  display: block;
-  border: none;
-  background-color: transparent;
-  color: var(--primary-color);
-  font-size: 30px;
-}
-.suggested .item:hover .btns {
-  display: flex !important;
-}
-.suggested .item {
-  transition: all 34s ease-in-out;
 }
 
 .suggested2 .item .btns {
@@ -322,37 +301,8 @@ h2.title {
   transition: all 0.15s linear;
 }
 
-.profile-card-6 .profile-overview {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  background: linear-gradient(0deg, rgba(36, 46, 179, 0.3647058824) 50%, rgba(255, 255, 0, 0));
-  color: #FFF;
-  padding: 50px 0px 20px 0px;
-  transition: all 0.15s linear;
-}
-.profile-card-6 .profile-overview img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
-
-.profile-card-6 .profile-overview h3 {
-  font-weight: bold;
-}
-
-.profile-card-6 .profile-overview p {
-  color: rgba(255, 255, 255, 0.7);
-}
-
 .profile-card-6:hover img {
   filter: brightness(80%);
-}
-
-.profile-card-6:hover .profile-name {
-  padding-left: 25px;
-  padding-top: 20px;
 }
 
 .profile-card-6:hover .profile-overview {
@@ -442,48 +392,13 @@ h2.title {
   color: black;
 }
 
-.vide {
-  position: relative;
-  background-image: url("../images/aMBERWOOD.gif");
-  background-size: 100% 100%;
-  padding: 20px;
-  background-attachment: fixed;
-}
-.vide .ele {
-  height: 100%;
-  align-items: center;
-}
-.vide .ele h2 {
-  width: 100%;
-  text-align: center;
-  font-size: 3rem;
-  color: white;
-  font-weight: 600;
-  margin: 2% 0px 0px;
-}
-.vide .ele .item {
-  margin: auto;
-}
-.vide .ele .card-sl {
-  background-color: rgba(255, 255, 255, 0.4431372549);
-}
-.vide .ele .card-sl .card-text, .vide .ele .card-sl .card-heading {
-  color: white;
-  background-color: transparent;
-}
-.vide .ele .card-sl .card-button {
-  background-color: rgba(25, 121, 255, 0.7411764706);
-}
-.vide .ele img {
-  width: 100%;
-}
-
 .banner {
   overflow: hidden;
 }
 .banner .row {
   background-image: url(../images/slider-thumb-full-1.jpg);
   background-size: 100% 100%;
+  background-position: center;
 }
 .banner .row div div {
   z-index: 999;
@@ -666,5 +581,36 @@ footer .contacts_social {
   .banner .row h1 {
     font-size: 20px !important;
     margin: 0px 0px 20px !important;
+  }
+  .owl-nav {
+    display: block !important;
+  }
+  .owl-nav button {
+    top: 55%;
+    position: absolute;
+    background-color: var(--primary-color) !important;
+    border-radius: 50% !important;
+  }
+  .owl-nav button span {
+    font-size: 35px;
+    background-color: var(--primary-color);
+    width: 40px;
+    display: block;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 38px;
+    color: white;
+  }
+  .owl-nav .owl-prev {
+    left: 0px !important;
+  }
+  .owl-nav .owl-next {
+    right: 0px;
+  }
+  h2.title, .suggested2 h3 {
+    font-size: 35px;
+  }
+  .suggested2 .owl-nav button {
+    top: 35% !important;
   }
 }/*# sourceMappingURL=style.css.map */

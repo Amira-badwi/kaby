@@ -175,7 +175,7 @@ padding: 0px !important;
 
 /* Style the buttons inside the tab */
 .tab button {
-  max-width:170px;
+  max-width:90px;
   height: 50px;
   flex-grow: 2;
   background-color: #dddddd00;
@@ -233,39 +233,7 @@ h2.title{
     margin: 30px 0px;
     font-weight: 700;
 }
-.suggested{
- 
-    .item{
 
-        .btns{
-            display: none;
-         
-            justify-content: space-around;
-            position: absolute;
-            top: 45%;
-            width: 90%;
-            
-            button{
-                display: block;
-                border: none;
-                background-color: transparent;
-                color: var(--primary-color);
-                font-size: 30px;
-            }
-        }
-    }
-    .item:hover{
-        .btns {
-            display: flex !important;
-
-        }
-   
-    }
-    .item{
-        transition: all 34s ease-in-out;
-
-    }
-}
 .suggested2{
  
     .item{
@@ -371,40 +339,9 @@ h2.title{
 }
 
 
-
-.profile-card-6 .profile-overview {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    background: linear-gradient(0deg, #242eb35d 50%, rgba(255, 255, 0, 0));
-    color: #FFF;
-    padding: 50px 0px 20px 0px;
-    transition: all 0.15s linear;
-    img{
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-    }
-}
-
-.profile-card-6 .profile-overview h3 {
-    font-weight: bold;
-}
-
-.profile-card-6 .profile-overview p {
-    color: rgba(255, 255, 255, 0.7);
-}
-
 .profile-card-6:hover img {
     filter: brightness(80%);
 }
-
-.profile-card-6:hover .profile-name {
-    padding-left: 25px;
-    padding-top: 20px;
-}
-
 
 .profile-card-6:hover .profile-overview {
     padding-bottom: 25px;
@@ -426,11 +363,7 @@ direction: rtl;
         }
        
     }
-// .card-image{
-//     position: absolute;
-//             top: 0px;
 
-// }
     .card-image img {
         max-height: 100%;
         max-width: 100%;
@@ -539,57 +472,13 @@ direction: rtl;
 }
  
 }
-.vide{
-    
-    position: relative;
-    background-image:url("../images/aMBERWOOD.gif") ;
-    background-size: 100% 100%;
-    padding: 20px;
-    background-attachment: fixed;
 
-
-    .ele{
-
-
-        height: 100%;
-        align-items: center;
-        .owl3 {
-            // width: 100%;
-        }
-        h2 {
-            width: 100%;
-            text-align: center;
-            font-size: 3rem;
-            color: white;
-            font-weight: 600;
-            margin: 2% 0px 0px;
-        }
-       .item{
-      
-        margin: auto;
-       }
-        .card-sl{
-            background-color: #ffffff71;
-            .card-text , .card-heading{
-                color: white;
-                background-color: transparent;
-            }
-            .card-button {
-                background-color: #1979ffbd;
-            }
-        }
-        img{
-            width: 100%;
-            
-        }
-      
-    }
-}
 // 
 .banner {
     overflow: hidden;
     .row {
         background-image:url(../images/slider-thumb-full-1.jpg);background-size:100% 100%;
+        background-position: center;
        div div { 
         z-index: 999;
         position: relative;
@@ -800,6 +689,48 @@ footer{
     }
 }
            }
+.owl-nav{
+    display: block !important;
+ 
+        button {
+            top: 55%;
+          
+           
+            position: absolute;
+     
+            background-color: var(--primary-color) !important;
+            border-radius: 50% !important;
 
+
+            span{
+                font-size: 35px;
+                background-color: var(--primary-color);
+                width: 40px;
+                display: block;
+                height: 40px;
+                border-radius: 50%;
+                line-height: 38px;
+                color: white;
+            }
+        }
     
+        .owl-prev{
+    left: 0px !important;
+        }
+        .owl-next{
+         right:0px ;
+        }
+    
+}
+h2.title , .suggested2 h3 {
+    font-size: 35px;
+} 
+.suggested2 {
+    .owl-nav{
+     
+            button {
+                top: 35% !important;
+
+            }}    
+}
   }
