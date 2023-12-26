@@ -764,7 +764,23 @@ footer{
 .text-justify{
     text-align: justify;
 }
-  @media screen and (max-width:1200px){
-   
+  @media screen and (max-width:800px){
+    .parent h2{
+       font-size: 20px ;
+    }
+    .parent .tablinks{
+        font-size: 16px;
+    }
+    .carousel.slide{
+        button{
+            width: 35px;
+            height: 35px;
+            i{
+                font-size: 20px;
+
+            }
+        }
+        .carousel-item{
+           aspect-ratio: 1.5/1;}}
     
   }

@@ -632,4 +632,23 @@ footer .contacts_social {
 
 .text-justify {
   text-align: justify;
+}
+
+@media screen and (max-width: 800px) {
+  .parent h2 {
+    font-size: 20px;
+  }
+  .parent .tablinks {
+    font-size: 16px;
+  }
+  .carousel.slide button {
+    width: 35px;
+    height: 35px;
+  }
+  .carousel.slide button i {
+    font-size: 20px;
+  }
+  .carousel.slide .carousel-item {
+    aspect-ratio: 1.5/1;
+  }
 }/*# sourceMappingURL=style.css.map */
