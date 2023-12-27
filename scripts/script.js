@@ -1,27 +1,33 @@
 $(".owl2").owlCarousel({
   responsiveClass: true,
+  loop:true,
+  autoplay:true,
+  autoplayTimeout:1200,
+  autoplayHoverPause: true,
+
   responsive: {
       0:{
-          items:1,
-          nav:true
-      },
-      500:{
           items:2,
-          nav:true
+          nav:true ,
+          loop:true
+
       },
-      700:{
-        items:3,
-        nav:true
-    },
+      600:{
+          items:3,
+          nav:true ,
+          loop:true
+
+      },
+
       1000:{
           items:4,
           nav:true,
-          loop:false
-      } ,
+          loop:true
+        } ,
       1100:{
         items:5,
         nav:true,
-        loop:false
+        loop:true
     
       }
     
@@ -29,25 +35,34 @@ $(".owl2").owlCarousel({
 });
 $(".owl3").owlCarousel({
   responsiveClass: true,
+  loop:true,
+  autoplay:true,
+  autoplayTimeout:1200,
+  autoplayHoverPause: true,
+
+  
   responsive: {
       0:{
-          items:1,
-          nav:true
+          items:2,
+          nav:true ,
+          loop:true
+
       },
       1000:{
-        items:2,
-        nav:true,
-        loop:false
+        items:3,
+        loop:true
+
       },
       1200:{
           items:4,
-          nav:true,
-          loop:false
+          loop:true
+
       } ,
     
   },
 });
 //////
+
 
 // 
 let medias=[].slice.call (document.getElementsByClassName("px-media"));
