@@ -2,7 +2,8 @@ $(".owl2").owlCarousel({
   responsiveClass: true,
   loop:true,
   autoplay:true,
-  autoplayTimeout:2500,
+  smartSpeed: 1000 ,
+  smartSpeed: 300 ,
   autoplayHoverPause: true,
 
   responsive: {
@@ -37,7 +38,8 @@ $(".owl3").owlCarousel({
   responsiveClass: true,
   loop:true,
   autoplay:true,
-  autoplayTimeout:2500,
+  smartSpeed: 1000 ,
+
   autoplayHoverPause: true,
 
   

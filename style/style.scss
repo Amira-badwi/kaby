@@ -204,7 +204,6 @@ padding: 0px !important;
   border-radius: 10px;
   font-weight:700;
   text-align: center;
-  display: block;
 }
 
 /* Style the tab content */
@@ -652,8 +651,17 @@ footer{
     text-align: justify;
 }
   @media screen and (max-width:800px){
+    .item .card-sl a {
+        font-size: 13px;
+    }
+    .suggested2 h2 {
+        font-size: 16px;
+    }
     .tab button {
+        padding: 0px;
         max-width: 90px;
+        margin: 0px !important ;
+        text-align: center;
     }
     .parent h2{
        font-size: 26px ;
