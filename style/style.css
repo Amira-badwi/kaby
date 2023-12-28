@@ -17,6 +17,7 @@
 
 body {
   direction: rtl;
+  background-color: rgba(251, 238, 249, 0.4470588235) !important;
 }
 
 .superNav {
@@ -197,7 +198,6 @@ nav input {
   color: #273342;
   border: 1px solid rgba(221, 221, 221, 0.2509803922);
   padding: 40px 0px;
-  background: #fff;
   border-radius: 10px;
 }
 
@@ -257,6 +257,12 @@ h2.title {
 
 .owl-dots {
   display: none;
+}
+
+.parent1 {
+  background-image: url(../images/earth-tone-floral-background-wallpaper.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
 }
 
 .parent a {
@@ -319,6 +325,7 @@ h2.title {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding-top: 150px;
   border-radius: 50px 10px 10px;
+  background-color: white;
 }
 .item .card-sl a {
   display: block;
@@ -553,17 +560,8 @@ footer .contacts_social {
   .suggested2 h2 {
     font-size: 16px;
   }
-  .tab button {
-    padding: 0px;
-    max-width: 90px;
-    margin: 0px !important;
-    text-align: center;
-  }
   .parent h2 {
     font-size: 26px;
-  }
-  .parent .tablinks {
-    font-size: 16px;
   }
   .carousel.slide h2 {
     font-size: 25px !important;
@@ -624,5 +622,22 @@ footer .contacts_social {
   }
   .suggested2 .owl-nav button {
     top: 35% !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .parent .tablinks {
+    font-size: 16px;
+  }
+  .tab button {
+    padding: 0px;
+    max-width: 90px;
+    margin: 0px !important;
+    text-align: center;
+  }
+  .item .card-image img {
+    margin-bottom: -90px !important;
+  }
+  .card-sl {
+    padding-top: 90px !important;
   }
 }/*# sourceMappingURL=style.css.map */
