@@ -98,3 +98,13 @@ parent_links.forEach(plink=>{
  evt.target.classList.add("active") 
 
 }
+
+
+let media =[].slice.call (document.getElementsByClassName("px-media"));
+
+media.forEach(e=>{
+   let data= e.getAttribute("data-src") ;
+  e.style.backgroundImage = `url("${data}")`;
+
+})
+
