@@ -6,7 +6,6 @@
   }
 *{
     font-family: 'myFirstFont', sans-serif;
-
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
@@ -62,7 +61,7 @@ body{
     }
   
 }
-  nav  {
+  nav.navbar  {
     
     .navbar-brand{
         padding: 0px;
@@ -522,6 +521,10 @@ direction: rtl;
     position: absolute;
     top: 0px;
 }
+.pagination  {
+    justify-content: center;
+    margin-top: 20px;
+}
 footer{
     .cotent {
         position: relative;
@@ -692,7 +695,156 @@ h1{
         }
     }
 }
+.accordion {
+    width: 170px;
+    background-color: white ;
+  }
 
+  .products {
+    width: calc(100% - 200px);
+
+  }
+  .accordion {
+    padding: 10px 15px 0px 0px;
+    width: 200px;
+  
+    h3 {
+      font-size: 16px;
+    }
+  
+    h3::after,
+    h3.accordion-button:not(.collapsed)::after {
+      background-image: none;
+    }
+  
+    ul {
+      padding: 0px;
+    }
+    .accordion-button 
+    {
+        background-color: transparent;
+        color: var(--secondary_color) !important;
+        padding-right:  0px;
+    }
+    .accordion-button:not(.collapsed)
+  {
+      background-color: transparent;
+      box-shadow: none;
+      padding: 3px 0px;
+    }
+  
+    .price {
+  
+      input,
+      .go {
+        outline: none;
+        border: none;
+        width: 50px;
+        text-align: center;
+      }
+  
+      input {
+        border: 1px solid var(--secondary_color);
+  
+      }
+  
+      span {
+        padding: 7px;
+        font-size: 12px;
+      }
+    }
+  
+    .color {
+      p {
+        padding: 0px 10px;
+      }
+  
+      .form-check-input {
+        visibility: hidden;
+      }
+  
+      .form-check-input:checked~label {
+        border: 2px solid rgb(194, 192, 192);
+      }
+  
+      label {
+        background-color: white;
+        width: 70px;
+        padding: 5px;
+        margin: 5px 0px;
+  
+        p {
+          margin-bottom: 0px !important;
+        }
+  
+        div {
+          padding: 0px 10px;
+          font-size: 14px;
+        }
+      }
+    }
+  
+    .item {
+      a {
+        text-decoration: none;
+        color: #2b2b28cc;
+        font-weight: 500;
+        font-size: 14px;
+      }
+  
+      ul#collapse1 {
+        list-style: none;
+  
+        border-right: 1px solid #c9bcbc;
+  
+        h3 {
+          color: #2b2b28cc;
+  
+          i {
+            position: absolute;
+            right: -7px;
+            background-color: #ffffff;
+          }
+        }
+  
+        ul.show {
+          margin: 10px;
+          list-style: none;
+  
+          li {
+            padding: 2px 10px;
+          }
+        }
+      }
+    }
+  
+    button.accordion-button {
+  
+      font-weight: bold;
+      font-size: 18px;
+      color: #2b2b28cc;
+    }
+  
+    .accordion-button::after {
+      margin-right: auto;
+      margin-left: 1px;
+      margin-top: 5px;
+      background-size: 13px;
+    }
+  }
+  .contain-all  {
+ display: flex;
+  }
+  .breadcrumb {
+    padding: 20px !important;
+    background-color: #deecfbc2;
+    background-image: url(../images/img.svg);
+    background-size: 175%;
+    font-size: large;
+a{
+    text-decoration: none;
+}
+  }
 footer{
     // background-color:var(--primary-color) ;
     background-image: url(../images/flowers-background-copy-space.jpg);
@@ -808,6 +960,7 @@ footer{
 h2.title , .suggested2 h3 {
     font-size: 35px;
 } 
+
 .suggested2 {
     .owl-nav{
      
@@ -817,7 +970,32 @@ h2.title , .suggested2 h3 {
             }}    
 }
   }
+  h3.title{
+    font-weight: 500;
+    font-size: 54px;
+    text-align: center;
+    color: var(--primary-color);
+}
   @media screen and (max-width:600px){
+    #accordionFlushExample {
+        display: contents;
+        z-index: 999;
+        width: 95%;
+    
+        background-color: rgb(255, 255, 255);
+    
+        .item {
+          padding:0px 20px !important;
+        }
+      }
+    
+      .contain-all {
+        display: block !important;
+    
+        .products {
+          width: 100%;
+        }
+      }
     .parent .tablinks{
         font-size: 16px;
     }

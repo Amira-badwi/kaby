@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مافى كابى</title>
+    <!-- style -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- bootstrap style -->
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.rtl.min.css">
+    <!-- font awsome -->
+    <script src="https://kit.fontawesome.com/e6719e2cd9.js" crossorigin="anonymous"></script>
+      <!-- owl carousel -->
+      <link   rel="stylesheet"   href="OwlCarousel/dist/assets/owl.carousel.min.css"/>
+      <link   rel="stylesheet"   href="OwlCarousel/dist/assets/owl.theme.default.min.css" />
+</head>
+<body>
+<!-- header -->
+<header>
+    <div class="superNav border-bottom py-2 ">
+        <div class="container">
+          <div class="row justify-content-between align-items-center ">
+            <div class="col-auto centerOnMobile d-flex">
+              <select  class=" mx-lg-3  border-0">
+                  <option value="en-us">AR</option>
+                   <option value="en-us">EN-US</option>
+              </select>
+              <div class=" mx-md-5 mx-2">
+                <a href="" class="text-white me-2  ">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="text-white me-2  ">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="text-white me-2  ">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>     
+            
+          </div>
+           <div class="col-auto" >     
+                  <a class=" mx-md-2 text-uppercase" href="#"> <sup class="cart">0</sup>  <i class="fa-solid fa-basket-shopping mx-md-2 mx-1 "></i> <span class="d-lg-inline d-none">السلة</span></a>  
+                  <a class=" mx-md-2 text-uppercase" href="#"> <sup class="fav fav-count">0</sup> <i class="fa-solid fa-heart mx-md-2 mx-1 "></i>  <span class="d-lg-inline d-none">المفضلة</span></a>  
+                  <a class=" mx-md-2 text-uppercase" href="#"><i class="fa-solid fa-circle-user mx-md-2 mx-1 "></i> <span class="d-lg-inline d-none"> الحساب الشخصى </span>  </a>
+           </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg px-lg-5 ">
+        <div class="container-fluid px-5 ">   
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" width="90px" >
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-sliders-h"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="categories.html">منتجتنا</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  عطور
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">بيبى</a></li>
+                  <li><a class="dropdown-item" href="#">اسكندورن</a></li>
+                  <li><a class="dropdown-item" href="#">ازمير</a></li>
+                  <li><a class="dropdown-item" href="#">ماردين</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">كل العطور</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  مرشات
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">بالوفا</a></li>
+                  <li><a class="dropdown-item" href="#">بورصه</a></li>
+                  <li><a class="dropdown-item" href="#">ازمير</a></li>
+                  <li><a class="dropdown-item" href="#">ماردين</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">كل المرشات</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  هيرمست
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">كيان</a></li>
+                  <li><a class="dropdown-item" href="#">هدبا</a></li>
+                  <li><a class="dropdown-item" href="#">مزيان</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">كل الهيرمست</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">تواصل معنا</a>
+              </li>
+            </ul>
+            <form class="d-flex col-lg-4 col-md-6 col-12 pb-lg-0 pb-3">
+              <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+              <button class="btn search " type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+</header>
+<!-- //// -->
+<!-- breadcrumb -->
+<nav aria-label="breadcrumb m-0 ">
+    <ol class="breadcrumb m-0">
+      <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+      <li class="breadcrumb-item"><a href="categories.html">التصنيفات</a></li>
+      <li class="breadcrumb-item active" aria-current="page">بالوفا</li>
+    </ol>
+  </nav>
+<!-- products -->
+<div class="container-fluid p-0">
+ <div class=" justify-content-between contain-all " >
+ <!-- grid1 -->
+  <!-- filter menu -->
+    <div class="accordion  " id="accordionFlushExample">
+      <div class="item">
+          <button class="accordion-button collapsed my-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" >
+              الصنف      
+            </button>
+            <ul id="collapse1" class="accordion-collapse collapse ">
+                  <li>
+                      <h3 class="accordion-button  px-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-inner" >
+                          <i class="far fa-minus-square " ></i>     عطور      
+                      </h3>
+                      <ul id="collapse1-inner" class=" collapse show " >
+                                  <li>  <a href="index.html">كل العطور</a></li>
+                                  <li> <a href="#"> بيبى</a></li>
+                                  <li> <a href="#"> </a></li>
+                                  <li> <a href="#">ازمير </a></li>
+                                  <li> <a href="#"> اسكندورن</a></li>
+                    </ul>   
+                  </li>
+                  <li>
+                      <h3 class="accordion-button collapsed px-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2-inner" >
+                          <i class="far fa-minus-square " ></i>   هيرمست      
+                      </h3>
+                      <ul id="collapse2-inner" class=" collapse show " >
+                                  <li>  <a href="index.html">كل الهيرمست</a></li>
+                                  <li> <a href="#"> كيان</a></li>
+                                  <li> <a href="#"> كيان</a></li>
+                                  <li> <a href="#"> كيان</a></li>
+                     </ul>   
+                  </li>
+                  <li>
+                      <h3 class="accordion-button collapsed px-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2-inner" >
+                          <i class="far fa-minus-square " ></i>   مرشات      
+                      </h3>
+                      <ul id="collapse2-inner" class=" collapse show " >
+                                  <li>  <a href="index.html">الكل مرشات </a></li>
+                                  <li> <a href="#"> بالوفا</a></li>
+                                  <li> <a href="#"> بورصه</a></li>
+                                  <li> <a href="#"> بالوفا</a></li>
+                     </ul>   
+                  </li>
+            </ul>    
+      </div>
+      <div class="item">
+          <button class="accordion-button collapsed my-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" >
+             تاريخ الوصول    
+          </button>
+            <div id="collapse2" class=" accordion-collapse collapse">
+                  <div>
+                      <input type="radio" id="check1" name="select" >
+                      <label for="vehicle1"> آخر 7 أيام</label>
+                  </div>
+                  <div>
+                      <input type="radio" id="check2" name="select" >
+                      <label for="check2"> آخر 30 يوم</label>
+                  </div>
+                  <div>
+                      <input type="radio" id="check3" name="select" >
+                      <label for="check3"> آخر 60 يوم</label>
+                  </div>
+          </div>    
+      </div>
+      <div class="item price">
+          <button class="accordion-button collapsed my-2 " type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" >
+              السعر    
+          </button>
+            <div id="collapse3" class="    py-3  accordion-collapse collapse">
+                <div class="d-flex">
+                  <input class="col-5" type="text" placeholder="1">
+                  <span>الى </span>
+                  <input class="col-5" type="text" placeholder="999">
+                  <button class="go">بحث </button>
+                </div>
+            </div>    
+      </div>
+      
+    </div>
+  <!-- filter -->
+  <!-- grid2 -->
+    <div class=" products   "> 
+    <!-- products -->
+    <div class="container-fluid ">
+        <h3 class="title my-5 ">  عطور </h3>
+        <div class="row">
+           <div class="col-lg-3 col-md-4 col-6">
+            <div class=" item px-2 pb-3">
+                <a href="" class="card-image ">
+                  <img src="images/product-item-7-removebg-preview.png" />
+                  </a>
+                          <div class="card-sl">
+                              <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
+                              <a href="" class="card-heading">
+                                 فول زافيلا
+                              </a>
+                              <a class="card-text">
+                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة          
+                              </a>
+                              <div class="card-text">
+                                  $67,400
+                              </div>
+                              <a href="#" class="card-button"> <i class="fa-solid fa-basket-shopping mx-2">  </i>اضف الى السلة</a>
+                          </div>
+               </div> 
+           </div>
+           <div class="col-lg-3 col-md-4 col-6">
+            <div class=" item px-2 pb-3">
+                <a href="" class="card-image ">
+                  <img src="images/product-item-7-removebg-preview.png" />
+                  </a>
+                          <div class="card-sl">
+                              <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
+                              <a href="" class="card-heading">
+                                 فول زافيلا
+                              </a>
+                              <a class="card-text">
+                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة          
+                              </a>
+                              <div class="card-text">
+                                  $67,400
+                              </div>
+                              <a href="#" class="card-button"> <i class="fa-solid fa-basket-shopping mx-2">  </i>اضف الى السلة</a>
+                          </div>
+               </div> 
+           </div>
+           <div class="col-lg-3 col-md-4 col-6">
+            <div class=" item px-2 pb-3">
+                <a href="" class="card-image ">
+                  <img src="images/product-item-7-removebg-preview.png" />
+                  </a>
+                          <div class="card-sl">
+                              <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
+                              <a href="" class="card-heading">
+                                 فول زافيلا
+                              </a>
+                              <a class="card-text">
+                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة          
+                              </a>
+                              <div class="card-text">
+                                  $67,400
+                              </div>
+                              <a href="#" class="card-button"> <i class="fa-solid fa-basket-shopping mx-2">  </i>اضف الى السلة</a>
+                          </div>
+               </div> 
+           </div>
+           <div class="col-lg-3 col-md-4 col-6">
+            <div class=" item px-2 pb-3">
+                <a href="" class="card-image ">
+                  <img src="images/product-item-7-removebg-preview.png" />
+                  </a>
+                          <div class="card-sl">
+                              <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
+                              <a href="" class="card-heading">
+                                 فول زافيلا
+                              </a>
+                              <a class="card-text">
+                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة          
+                              </a>
+                              <div class="card-text">
+                                  $67,400
+                              </div>
+                              <a href="#" class="card-button"> <i class="fa-solid fa-basket-shopping mx-2">  </i>اضف الى السلة</a>
+                          </div>
+               </div> 
+           </div>
+           <div class="col-lg-3 col-md-4 col-6">
+            <div class=" item px-2 pb-3">
+                <a href="" class="card-image ">
+                  <img src="images/product-item-7-removebg-preview.png" />
+                  </a>
+                          <div class="card-sl">
+                              <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
+                              <a href="" class="card-heading">
+                                 فول زافيلا
+                              </a>
+                              <a class="card-text">
+                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة          
+                              </a>
+                              <div class="card-text">
+                                  $67,400
+                              </div>
+                              <a href="#" class="card-button"> <i class="fa-solid fa-basket-shopping mx-2">  </i>اضف الى السلة</a>
+                          </div>
+               </div> 
+           </div>
+           <div class="col-lg-3 col-md-4 col-6">
+            <div class=" item px-2 pb-3">
+                <a href="" class="card-image ">
+                  <img src="images/product-item-7-removebg-preview.png" />
+                  </a>
+                          <div class="card-sl">
+                              <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
+                              <a href="" class="card-heading">
+                                 فول زافيلا
+                              </a>
+                              <a class="card-text">
+                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة          
+                              </a>
+                              <div class="card-text">
+                                  $67,400
+                              </div>
+                              <a href="#" class="card-button"> <i class="fa-solid fa-basket-shopping mx-2">  </i>اضف الى السلة</a>
+                          </div>
+               </div> 
+           </div>
+           <div class="col-lg-3 col-md-4 col-6">
+            <div class=" item px-2 pb-3">
+                <a href="" class="card-image ">
+                  <img src="images/product-item-7-removebg-preview.png" />
+                  </a>
+                          <div class="card-sl">
+                              <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
+                              <a href="" class="card-heading">
+                                 فول زافيلا
+                              </a>
+                              <a class="card-text">
+                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة          
+                              </a>
+                              <div class="card-text">
+                                  $67,400
+                              </div>
+                              <a href="#" class="card-button"> <i class="fa-solid fa-basket-shopping mx-2">  </i>اضف الى السلة</a>
+                          </div>
+               </div> 
+           </div>
+           <div class="col-lg-3 col-md-4 col-6">
+            <div class=" item px-2 pb-3">
+                <a href="" class="card-image ">
+                  <img src="images/product-item-7-removebg-preview.png" />
+                  </a>
+                          <div class="card-sl">
+                              <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
+                              <a href="" class="card-heading">
+                                 فول زافيلا
+                              </a>
+                              <a class="card-text">
+                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة          
+                              </a>
+                              <div class="card-text">
+                                  $67,400
+                              </div>
+                              <a href="#" class="card-button"> <i class="fa-solid fa-basket-shopping mx-2">  </i>اضف الى السلة</a>
+                          </div>
+               </div> 
+           </div>
+        </div>
+    </div>
+      <!-- pagination -->
+      <nav aria-label="Page navigation example  ">
+        <ul class="pagination ">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+              <span class="sr-only">Previous</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+              <span class="sr-only">Next</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+     <!-- suggested for u  -->
+     <div class="suggested2 " >
+        <h3 class="title my-5 "> مقترحة لك </h3>
+        <div class="owl-carousel owl2  owl-theme  px-3" dir="ltr">
+          <div class=" item px-2 pb-3">
+                <a href="" class="profile-card-6  p-1">
+                    <img src="images/product-item-4.jpg" >         
+                </a>
+                <div class="btns">
+                  <button class="d-block">  <i class="fa-solid fa-basket-shopping mx-2"></i> </button>
+                <button class="d-block">  <i class="fa-regular fa-heart"></i> </button>
+               </div>
+             <h2 class="text-center">Green Spray</h2>
+            <div class="  d-flex justify-content-center ">
+                 <span class="cost">$22.00</span>
+                 <span class="offer">$22.00</span>
+            </div>
+        </div> 
+  <div class=" item px-2 pb-3">
+  <a href="" class="profile-card-6  p-1">
+     <img src="images/product-item-22.jpg" >         
+  </a>
+ <div class="btns">
+    <button class="d-block">  <i class="fa-solid fa-basket-shopping mx-2"></i> </button>
+    <button class="d-block">  <i class="fa-regular fa-heart"></i> </button>
+ </div>
+    <h2 class="text-center">Green Spray</h2>
+      <div class="  d-flex justify-content-center ">
+         <span class="cost">$22.00</span>
+         <span class="offer">$22.00</span>
+      </div>
+</div> 
+  <div class=" item px-2 pb-3">
+     <a href="" class="profile-card-6  p-1">
+                            <img src="images/product-item-4.jpg" >         
+       </a>
+       <div class="btns">
+          <button class="d-block">  <i class="fa-solid fa-basket-shopping mx-2"></i> </button>
+          <button class="d-block">  <i class="fa-regular fa-heart"></i> </button>
+        </div>
+          <h2 class="text-center">Green Spray</h2>
+        <div class="  d-flex justify-content-center ">
+          <span class="cost">$22.00</span>
+          <span class="offer">$22.00</span>
+         </div>
+      </div> 
+   <div class=" item px-2 pb-3">
+       <a href="" class="profile-card-6  p-1">
+         <img src="images/product-item-6.jpg" >         
+       </a>
+       <div class="btns">
+            <button class="d-block">  <i class="fa-solid fa-basket-shopping mx-2"></i> </button>
+            <button class="d-block">  <i class="fa-regular fa-heart"></i> </button>
+       </div>
+       <h2 class="text-center">Green Spray</h2>
+       <div class="  d-flex justify-content-center ">
+         <span class="cost">$22.00</span>
+         <span class="offer">$22.00</span>
+       </div>
+   </div> 
+ <div class=" item px-2 pb-3">
+     <a href="" class="profile-card-6  p-1">
+     <img src="images/product-item-7.jpg" >         
+     </a>
+     <div class="btns">
+        <button class="d-block">  <i class="fa-solid fa-basket-shopping mx-2"></i> </button>
+        <button class="d-block">  <i class="fa-regular fa-heart"></i> </button>
+     </div>
+     <h2 class="text-center">Green Spray</h2>
+     <div class="  d-flex justify-content-center ">
+        <span class="cost">$22.00</span>
+        <span class="offer">$22.00</span>
+     </div>
+ </div> 
+  <div class=" item px-2 pb-3">
+      <a href="" class="profile-card-6  p-1">
+      <img src="images/product-item-7.jpg" >         
+      </a>
+      <div class="btns">
+        <button class="d-block">  <i class="fa-solid fa-basket-shopping mx-2"></i> </button>
+        <button class="d-block">  <i class="fa-regular fa-heart"></i> </button>
+      </div>
+      <h2 class="text-center">Green Spray</h2>
+      <div class="  d-flex justify-content-center ">
+        <span class="cost">$22.00</span>
+        <span class="offer">$22.00</span>
+      </div>
+  </div> 
+     </div>
+     </div>
+      
+      <!--// pagination -->
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="text-center text-lg-start text-white">
+    <section class="cotent">
+      <div class="container text-center text-md-start pt-5 ">
+        <!-- Grid row -->
+        <div class="row  py-2">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold"> مافى كابى</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto"/>
+            <p class="text-justify ">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص.
+            </p>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">المنتجات</h6>
+            <hr  class="mb-4 mt-0 d-inline-block mx-auto"/>
+            <p>
+              <a href="#!" > <i class="fas fa-chevron-left"></i> عطور </a>
+            </p>
+            <p>
+              <a href="#!" ><i class="fas fa-chevron-left"></i>  مرشات</a>
+            </p>
+            <p>
+              <a href="#!"  > <i class="fas fa-chevron-left"></i> هيرمست</a>
+            </p>
+           
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">تواصل معنا</h6>
+            <hr  class="mb-4 mt-0 d-inline-block mx-auto"/>
+            <p><i class="fas fa-home mr-3"></i> السعودية , الرياض ,شارع1</p>
+            <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+            <p><i class="fas fa-phone mr-3"></i> <span dir="ltr"> +1223455567</span></p>
+           
+            <div class="">
+              <a href="" class="text-white me-4">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="" class="text-white me-4">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="" class="text-white me-4">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <div class="overlay"></div>
+    </section>
+    <!-- Section: Links  -->
+    <div class="d-flex rights">
+      <p class="mb-0"> كل الحقوق محفوظة <span>© 2023 كابى</span></p>
+      <div class="payment">
+          <img src="images/img1.svg">
+          <img src="images/img4.svg">
+          <img src="images/img3.svg">
+          <img src="images/img2.svg">
+      </div>
+      <ul>
+          <li><a href=""> سياسة الضمان</a></li>
+          <li><a href=""> بِع معنا</a></li>
+          <li><a href="usage_conditions.html"> شروط الاستخدام</a></li>
+          <li><a href=""> سياسة الخصوصية</a></li>
+      </ul>
+  </div>
+</footer>
+  <!-- Footer -->
+<!-- bootstrap scripts -->
+<script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+<!-- carousel js -->
+<script src="OwlCarousel/dist/jquery.js"></script>
+<script src="OwlCarousel/dist/owl.carousel.min.js"></script>
+<!-- js script -->
+<script src="scripts/script.js"></script>
+</body>
+</html>

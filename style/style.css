@@ -61,35 +61,35 @@ body {
   margin-top: 2px;
 }
 
-nav {
+nav.navbar {
   background-color: white !important;
   border-bottom: 4px solid var(--secondary_color);
   padding: 0px !important;
 }
-nav .navbar-brand {
+nav.navbar .navbar-brand {
   padding: 0px;
 }
-nav .nav-link.active {
+nav.navbar .nav-link.active {
   font-weight: 500;
   color: var(--secondary_color);
 }
-nav .nav-link, nav .dropdown-item {
+nav.navbar .nav-link, nav.navbar .dropdown-item {
   font-size: 20px;
   color: black;
 }
-nav .navbar-toggler {
+nav.navbar .navbar-toggler {
   border-color: var(--primary-color);
 }
-nav .navbar-toggler i {
+nav.navbar .navbar-toggler i {
   color: var(--primary-color) !important;
 }
-nav .search {
+nav.navbar .search {
   background-color: #197AFF;
   border: 2px solid var(--secondary_color);
   color: white;
   border-radius: 5px 0px 0px 5px;
 }
-nav input {
+nav.navbar input {
   border: #197AFF 1px solid !important;
 }
 
@@ -440,6 +440,11 @@ h2.title {
   top: 0px;
 }
 
+.pagination {
+  justify-content: center;
+  margin-top: 20px;
+}
+
 footer .cotent {
   position: relative;
 }
@@ -581,6 +586,127 @@ footer .footerTop_form .form-input-wrapper input:focus + label, footer .footerTo
   opacity: 0.8;
 }
 
+.accordion {
+  width: 170px;
+  background-color: white;
+}
+
+.products {
+  width: calc(100% - 200px);
+}
+
+.accordion {
+  padding: 10px 15px 0px 0px;
+  width: 200px;
+}
+.accordion h3 {
+  font-size: 16px;
+}
+.accordion h3::after,
+.accordion h3.accordion-button:not(.collapsed)::after {
+  background-image: none;
+}
+.accordion ul {
+  padding: 0px;
+}
+.accordion .accordion-button {
+  background-color: transparent;
+  color: var(--secondary_color) !important;
+  padding-right: 0px;
+}
+.accordion .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  box-shadow: none;
+  padding: 3px 0px;
+}
+.accordion .price input,
+.accordion .price .go {
+  outline: none;
+  border: none;
+  width: 50px;
+  text-align: center;
+}
+.accordion .price input {
+  border: 1px solid var(--secondary_color);
+}
+.accordion .price span {
+  padding: 7px;
+  font-size: 12px;
+}
+.accordion .color p {
+  padding: 0px 10px;
+}
+.accordion .color .form-check-input {
+  visibility: hidden;
+}
+.accordion .color .form-check-input:checked ~ label {
+  border: 2px solid rgb(194, 192, 192);
+}
+.accordion .color label {
+  background-color: white;
+  width: 70px;
+  padding: 5px;
+  margin: 5px 0px;
+}
+.accordion .color label p {
+  margin-bottom: 0px !important;
+}
+.accordion .color label div {
+  padding: 0px 10px;
+  font-size: 14px;
+}
+.accordion .item a {
+  text-decoration: none;
+  color: rgba(43, 43, 40, 0.8);
+  font-weight: 500;
+  font-size: 14px;
+}
+.accordion .item ul#collapse1 {
+  list-style: none;
+  border-right: 1px solid #c9bcbc;
+}
+.accordion .item ul#collapse1 h3 {
+  color: rgba(43, 43, 40, 0.8);
+}
+.accordion .item ul#collapse1 h3 i {
+  position: absolute;
+  right: -7px;
+  background-color: #ffffff;
+}
+.accordion .item ul#collapse1 ul.show {
+  margin: 10px;
+  list-style: none;
+}
+.accordion .item ul#collapse1 ul.show li {
+  padding: 2px 10px;
+}
+.accordion button.accordion-button {
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(43, 43, 40, 0.8);
+}
+.accordion .accordion-button::after {
+  margin-right: auto;
+  margin-left: 1px;
+  margin-top: 5px;
+  background-size: 13px;
+}
+
+.contain-all {
+  display: flex;
+}
+
+.breadcrumb {
+  padding: 20px !important;
+  background-color: rgba(222, 236, 251, 0.7607843137);
+  background-image: url(../images/img.svg);
+  background-size: 175%;
+  font-size: large;
+}
+.breadcrumb a {
+  text-decoration: none;
+}
+
 footer {
   background-image: url(../images/flowers-background-copy-space.jpg);
   background-size: 100% 100%;
@@ -686,7 +812,29 @@ footer .contacts_social {
     top: 35% !important;
   }
 }
+h3.title {
+  font-weight: 500;
+  font-size: 54px;
+  text-align: center;
+  color: var(--primary-color);
+}
+
 @media screen and (max-width: 600px) {
+  #accordionFlushExample {
+    display: contents;
+    z-index: 999;
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+  }
+  #accordionFlushExample .item {
+    padding: 0px 20px !important;
+  }
+  .contain-all {
+    display: block !important;
+  }
+  .contain-all .products {
+    width: 100%;
+  }
   .parent .tablinks {
     font-size: 16px;
   }
