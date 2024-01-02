@@ -742,6 +742,9 @@ footer .contacts_social {
 }
 
 @media screen and (max-width: 800px) {
+  .product-slider .carousel-indicators {
+    bottom: 10px !important;
+  }
   .item .card-sl a {
     font-size: 13px;
   }
@@ -962,6 +965,9 @@ h3.title {
 }
 
 @media (max-width: 576px) {
+  .product-slider .carousel-indicators {
+    bottom: -40px !important;
+  }
   .registration-form form {
     padding: 20px 20px;
   }
