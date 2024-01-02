@@ -93,24 +93,24 @@ nav.navbar input {
   border: #197AFF 1px solid !important;
 }
 
-.carousel.slide .carousel-item {
+#carouselExampleControls.carousel.slide .carousel-item {
   aspect-ratio: 2.5/1;
   background-size: 100% 100%;
 }
-.carousel.slide .carousel-item .dark_link {
+#carouselExampleControls.carousel.slide .carousel-item .dark_link {
   display: flex;
   height: 100%;
   align-items: center;
   justify-content: center;
 }
-.carousel.slide .carousel-item .dark_link .text-center h2 {
+#carouselExampleControls.carousel.slide .carousel-item .dark_link .text-center h2 {
   color: var(--secondary_color);
   font-size: 39px;
 }
-.carousel.slide .carousel-item .dark_link .text-center p {
+#carouselExampleControls.carousel.slide .carousel-item .dark_link .text-center p {
   font-size: 20px;
 }
-.carousel.slide .carousel-item .dark_link a {
+#carouselExampleControls.carousel.slide .carousel-item .dark_link a {
   text-decoration: none;
   border: 2px solid white;
   padding: 10px 20px;
@@ -124,17 +124,17 @@ nav.navbar input {
   font-size: 19px;
   font-weight: bold;
 }
-.carousel.slide .carousel-item .links {
+#carouselExampleControls.carousel.slide .carousel-item .links {
   display: flex;
   height: 100%;
   width: 100%;
   align-items: center;
 }
-.carousel.slide .carousel-item .links div {
+#carouselExampleControls.carousel.slide .carousel-item .links div {
   text-align: center;
   color: white;
 }
-.carousel.slide .carousel-item .links a {
+#carouselExampleControls.carousel.slide .carousel-item .links a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   border: 2px solid white;
@@ -147,13 +147,13 @@ nav.navbar input {
   border: 1px solid var(--secondary_color);
   font-size: 19px;
 }
-.carousel.slide .carousel-control-prev {
+#carouselExampleControls.carousel.slide .carousel-control-prev {
   right: 20px;
 }
-.carousel.slide .carousel-control-next {
+#carouselExampleControls.carousel.slide .carousel-control-next {
   left: 20px;
 }
-.carousel.slide button {
+#carouselExampleControls.carousel.slide button {
   top: 45%;
   background-color: var(--secondary_color);
   width: 60px;
@@ -161,7 +161,7 @@ nav.navbar input {
   border-radius: 50%;
   box-shadow: 1px 1px 9px black;
 }
-.carousel.slide button i {
+#carouselExampleControls.carousel.slide button i {
   color: white;
   font-size: 35px;
 }
@@ -865,7 +865,7 @@ h3.title {
   background-color: #fff;
   max-width: 600px;
   margin: auto;
-  padding: 50px 70px;
+  padding: 20px 70px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
@@ -905,18 +905,13 @@ h3.title {
   max-width: 600px;
   background-color: #fff;
   margin: auto;
-  padding: 35px 0;
+  padding: 15px 0;
   text-align: center;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   color: #9fadca;
   border-top: 1px solid #dee9ff;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
-}
-
-.registration-form .social-icons {
-  margin-top: 30px;
-  margin-bottom: 16px;
 }
 
 .registration-form .social-icons a {
@@ -938,9 +933,37 @@ h3.title {
   opacity: 0.6;
 }
 
+.product-slider {
+  width: 100%;
+}
+.product-slider .carousel-indicators {
+  bottom: 50px !important;
+}
+.product-slider .carousel-inner {
+  height: 100%;
+}
+.product-slider .carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+.product-slider img {
+  border-radius: 5px;
+}
+.product-slider .carousel-indicators button {
+  display: block;
+  width: 100%;
+}
+.product-slider .carousel-indicators button img {
+  width: 100%;
+  border: 1px solid var(--secondary_color) !important;
+}
+.product-slider .carousel-indicators button.active img {
+  border: 2px solid var(--secondary);
+}
+
 @media (max-width: 576px) {
   .registration-form form {
-    padding: 50px 20px;
+    padding: 20px 20px;
   }
   .registration-form .form-icon {
     width: 70px;
