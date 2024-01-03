@@ -14,12 +14,11 @@
       <link   rel="stylesheet"   href="OwlCarousel/dist/assets/owl.carousel.min.css"/>
       <link   rel="stylesheet"   href="OwlCarousel/dist/assets/owl.theme.default.min.css" />
 </head>
-<body>
-<!-- header -->
-<header>
+ <!-- header -->
+ <header>
     <div class="superNav border-bottom py-2 ">
-        <div class="container-fluid px-md-5">
-          <div class="row justify-content-between align-items-center ">
+        <div class="container-fluid px-md-5 ">
+            <div class="row justify-content-between align-items-center ">
             <div class="col-auto centerOnMobile d-flex">
               <select  class=" mx-lg-3  border-0">
                   <option value="en-us">AR</option>
@@ -41,14 +40,14 @@
            <div class="col-auto" >     
                   <a class=" mx-md-2 text-uppercase" href="#"> <sup class="cart">0</sup>  <i class="fa-solid fa-basket-shopping mx-md-2 mx-1 "></i> <span class="d-lg-inline d-none">السلة</span></a>  
                   <a class=" mx-md-2 text-uppercase" href="#"> <sup class="fav fav-count">0</sup> <i class="fa-solid fa-heart mx-md-2 mx-1 "></i>  <span class="d-lg-inline d-none">المفضلة</span></a>  
-                  <a class=" mx-md-2 text-uppercase" href="login.html"><i class="fa-solid fa-circle-user mx-md-2 mx-1 "></i> <span class="d-lg-inline d-none"> الحساب الشخصى </span>  </a>
+                  <a class=" mx-md-2 text-uppercase" href="#"><i class="fa-solid fa-circle-user mx-md-2 mx-1 "></i> <span class="d-lg-inline d-none"> الحساب الشخصى </span>  </a>
            </div>
           </div>
         </div>
       </div>
       <nav class="navbar navbar-expand-lg px-lg-5 ">
-        <div class="container-fluid px-md-5  ">   
-          <a class="navbar-brand" href="index.html">
+        <div class="container-fluid px-md-5 ">   
+            <a class="navbar-brand" href="index.html">
             <img src="images/logo.png" width="90px" >
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -109,162 +108,129 @@
         </div>
       </nav>
 </header>
-<!-- //// -->
-<!-- breadcrumb -->
-<nav aria-label="breadcrumb m-0 ">
-    <ol class="breadcrumb m-0">
-      <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
-      <li class="breadcrumb-item"><a href="categories.html">التصنيفات</a></li>
-      <li class="breadcrumb-item"><a href="products.html">الصنف</a></li>
-      <li class="breadcrumb-item active" aria-current="page">المنتج</li>
-    </ol>
-  </nav>
-<!-- products -->
-<div class="container-fluid p-0  ">
-   <!-- Product section-->
-   <section class="pt-2  bg-white pb-5 mt-5">
-    <div class="container px-4 px-lg-5 mt-3  ">
-        <div class="row gx-4 gx-lg-5 align-items-center " >
-            <div class="col-md-6"> 
-              <div id="product-slider" class="carousel slide product-slider" data-bs-ride="carousel">
-                <div class="carousel-indicators ">
-                    <button type="button" data-bs-target="#product-slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">         <img src="images/product-item-2.jpg" class="d-block"  alt="...">
-                    </button>
-                    <button type="button" data-bs-target="#product-slider" data-bs-slide-to="1" aria-label="Slide 2">        <img src="images/product-item-2.jpg" class="d-block"  alt="...">
-                    </button>
-                    <button type="button" data-bs-target="#product-slider" data-bs-slide-to="2" aria-label="Slide 3">        <img src="images/product-item-2.jpg" class="d-block"  alt="...">
-                    </button>
-                </div>
-                <div class="carousel-inner  ">
-                    <div class="carousel-item active">
-                        <img src="images/product-item-2.jpg" class="d-block " alt="...">
+<!-- ////// -->
+<div class="container-fluid">
+    <div class="wrapper col-lg-5 col-md-7 m-auto">
+        <form action="">
+            <div id="wizard">
+                <!-- SECTION 1 -->
+                <h4></h4>
+                <section>
+                    <div class="form-row"> <input type="text" class="form-control" placeholder="الاسم "> </div>
+                    <div class="form-row"> <input type="text" class="form-control" placeholder="الاميل"> </div>
+                    <div class="form-row"> <input type="text" class="form-control" placeholder="رقم الجوال "> </div>
+                    <div class="form-row"> <input type="text" class="form-control" placeholder="اسم الشارع "> </div>
+                </section> <!-- SECTION 2 -->
+                <h4></h4>
+                <section>
+                    <div class="form-row"> <input type="text" class="form-control" placeholder="البلد"> </div>
+                    <div class="form-row"> <input type="text" class="form-control" placeholder="كود البريد "> </div>
+                    <div class="form-row" style="margin-bottom: 18px"> <textarea name="" id="" class="form-control" placeholder="اى تفاصل بخصوص استلام الطلب" style="height: 108px"></textarea> </div>
+                </section> <!-- SECTION 3 -->
+                <h4></h4>
+                <section>
+                    <div class="product">
+                        <div class="item">
+                            <div class="left"> <a href="product_details.html" class="thumb"> <img src="images/Luxury-removebg-preview.png" alt=""> </a>
+                                <div class="purchase">
+                                    <h6> <a href="#">عطر فزلافيلا</a> </h6> <span>x1</span>
+                                </div>
+                            </div> <span class="price">$290</span>
+                        </div>
+                        <div class="item">
+                            <div class="left"> <a href="product_details.html" class="thumb"> <img src="images/Luxury-removebg-preview.png" alt=""> </a>
+                                <div class="purchase">
+                                    <h6> <a href="product_details.html">عطر فزلافيلا</a> </h6> <span>x1</span>
+                                </div>
+                            </div> <span class="price">$290</span>
+                        </div>
+                       
                     </div>
-                    <div class="carousel-item">
-                        <img src="images/product-item-2.jpg" class="d-block "  alt="...">
+                    <div class="checkout">
+                        <div class="subtotal"> <span class="heading">الاجمالى</span> <span class="total">$364</span> </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="images/product-item-2.jpg" class="d-block"  alt="...">
-                    </div>
-                </div>
+                </section> <!-- SECTION 4 -->
+                <h4></h4>
+                <h4></h4>
+                <section>
+                    <div class="price border my-3" dir="ltr">
+                        <!-- select -->
+                     <div>
+                          <div class="d-flex align-items-center my-3">
+                              <input type="radio" name="payment" id="Transfer">
+                              <label class="my-0 mx-2" for="Transfer">Direct Back Transfer</label>
+                          </div>
+                          <div id='Transfer'  class="d-none">
+                              <p class="d-block border bg-white p-3 mx-4 text-justify">
+                                  Lorem Ipsum is simply dummy text of the printing and
+                                  typesetting industry. Lorem Ipsum has been the industry's
+                                  standard dummy text ever since the 1500s, when an unknown
+                                  printer took a galley of type 
+                              </p>
+                          </div>
+                    </div>   
+                        <!-- select -->
+                      <div >
+                          <div class="d-flex align-items-center my-3" >
+                              <input type="radio" name="payment"   id="Check">
+                              <label class="my-0 mx-2" for="Check">Check payments  </label>
+                          </div>
+                          <div id='Check'  class="d-none">
+                              <p class="d-block border bg-white p-3 mx-4 text-justify">
+                                  Lorem Ipsum is simply dummy text of the printing and
+                                  typesetting industry. Lorem Ipsum has been the industry's
+                                  standard dummy text ever since the 1500s, when an unknown
+                                  printer took a galley of type 
+                              </p>
+                          </div>
+                      </div>
+                        <!-- select -->
+                      <div >
+                          <div class="d-flex align-items-center my-3">
+                              <input type="radio"  name="payment" id="Cash">
+                              <label class="my-0 mx-2" for="Cash">  Cash on delivery</label>
+                          </div>
+                          <div id='Cash' class="d-none">
+                              <p class="d-block border bg-white p-3 mx-4 text-justify">
+                                  Lorem Ipsum is simply dummy text of the printing and
+                                  typesetting industry. Lorem Ipsum has been the industry's
+                                  standard dummy text ever since the 1500s, when an unknown
+                                  printer took a galley of type 
+                              </p>
+                          </div>
+                      </div>
+                        <!-- select -->
+                    <div>
+                      <div class="d-flex align-items-center my-3">
+                          <input type="radio" name="payment" id="PayPal">
+                           <label class="my-0 mx-2 d-flex align-items-center"  for="PayPal">PayPal 
+                              <div class="d-flex mx-2">
+                                  <img src="images/img1.svg" width="30%" >
+                                  <img src="images/img2.svg" width="30%" >
+                                  <img src="images/img3.svg" width="30%" >
+                                  <img src="images/img4.svg" width="30%" >
+                              </div>
+                          </label>
+                         </div>
+                         <div id='PayPal' class="d-none">
+                          <p class="d-block border bg-white p-3  mx-4 text-justify" >
+                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص.
+                          </p>
+                      </div>
+                      </div>
+                  </div>
+                </section> <!-- SECTION 3 -->
+                <section>
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+                        <circle class="path circle" fill="none" stroke="#73AF55" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1" />
+                        <polyline class="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+                    </svg>
+                    <p class="success">تم الدفع بنجاح شكرا لثقتك</p>
+                </section>
             </div>
-           </div>
-            <div class="col-md-6">
-                <div class="small mb-1 mt-5 pt-4">SKU: BST-498</div>
-                <h1 class="display-5 fw-bolder">عطر لافزفيلا  </h1>
-                <div class="fs-5 mb-5">
-                    <span class="text-decoration-line-through">$45.00</span>
-                    <span>$40.00</span>
-                </div>
-                <p class="lead">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص.
-                </p>
-                <div class="d-flex gap-2 ">
-                    <input class="form-control text-center  " id="inputQuantity" type="number" min="1" value="1" style="max-width: 3rem" />
-                    <button class="btn btn-outline-dark flex-shrink-0" type="button">
-                      <i class="fa-solid fa-basket-shopping mx-md-2 mx-1 "></i>                        اضف الى السلة
-                    </button>
-                    <button class="btn btn-dark flex-shrink-0" type="button">
-                        اشترى الان
-                    </button>
-                </div>
-            </div>
-        </div>
+        </form>
     </div>
-</section>
-<!-- more popular -->
-<div class="container-fluid p-0 m-0 ">
-    <div class="suggested2 pt-3" >
-      <h3 class="title my-5 "> قد يعجبك ايضا</h3>
-      <div class="owl-carousel owl2  owl-theme  px-3" dir="ltr">
-         <div class=" item px-2 pb-3">
-            <a href="" class="profile-card-6  p-1">
-              <img src="images/product-item-4.jpg" class=" ">         
-            </a>
-            <div class="btns">
-              <button class="d-block">  <i class="fa-solid fa-basket-shopping mx-2"></i> </button>
-              <button class="d-block">  <i class="fa-regular fa-heart"></i> </button>
-            </div>
-            <h2 class="text-center">Green Spray</h2>
-            <div class="  d-flex justify-content-center ">
-             <span class="cost">$22.00</span>
-             <span class="offer">$22.00</span>
-            </div>
-         </div> 
-         <div class=" item px-2 pb-3">
-            <a href="" class="profile-card-6  p-1">
-              <img src="images/product-item-22.jpg" class=" ">         
-            </a>
-            <div class="btns">
-              <button class="d-block">  <i class="fa-solid fa-basket-shopping mx-2"></i> </button>
-              <button class="d-block">  <i class="fa-regular fa-heart"></i> </button>
-            </div>
-            <h2 class="text-center">Green Spray</h2>
-            <div class="  d-flex justify-content-center ">
-             <span class="cost">$22.00</span>
-             <span class="offer">$22.00</span>
-            </div>
-         </div> 
-         <div class=" item px-2 pb-3">
-            <a href="" class="profile-card-6  p-1">
-              <img src="images/product-item-4.jpg" class=" ">         
-            </a>
-            <div class="btns">
-              <button class="d-block">  <i class="fa-solid fa-basket-shopping mx-2"></i> </button>
-              <button class="d-block">  <i class="fa-regular fa-heart"></i> </button>
-            </div>
-            <h2 class="text-center">Green Spray</h2>
-            <div class="  d-flex justify-content-center ">
-             <span class="cost">$22.00</span>
-             <span class="offer">$22.00</span>
-            </div>
-         </div> 
-         <div class=" item px-2 pb-3">
-            <a href="" class="profile-card-6  p-1">
-              <img src="images/product-item-6.jpg" class=" ">         
-            </a>
-            <div class="btns">
-              <button class="d-block">  <i class="fa-solid fa-basket-shopping mx-2"></i> </button>
-              <button class="d-block">  <i class="fa-regular fa-heart"></i> </button>
-            </div>
-            <h2 class="text-center">Green Spray</h2>
-            <div class="  d-flex justify-content-center ">
-             <span class="cost">$22.00</span>
-             <span class="offer">$22.00</span>
-            </div>
-         </div> 
-         <div class=" item px-2 pb-3">
-            <a href="" class="profile-card-6  p-1">
-              <img src="images/product-item-7.jpg" class=" ">         
-            </a>
-            <div class="btns">
-              <button class="d-block">  <i class="fa-solid fa-basket-shopping mx-2"></i> </button>
-              <button class="d-block">  <i class="fa-regular fa-heart"></i> </button>
-            </div>
-            <h2 class="text-center">Green Spray</h2>
-            <div class="  d-flex justify-content-center ">
-             <span class="cost">$22.00</span>
-             <span class="offer">$22.00</span>
-            </div>
-         </div> 
-         <div class=" item px-2 pb-3">
-            <a href="" class="profile-card-6  p-1">
-              <img src="images/product-item-7.jpg" class=" ">         
-            </a>
-            <div class="btns">
-              <button class="d-block">  <i class="fa-solid fa-basket-shopping mx-2"></i> </button>
-              <button class="d-block">  <i class="fa-regular fa-heart"></i> </button>
-            </div>
-            <h2 class="text-center">Green Spray</h2>
-            <div class="  d-flex justify-content-center ">
-             <span class="cost">$22.00</span>
-             <span class="offer">$22.00</span>
-            </div>
-         </div> 
-        
-      </div>
-   </div>
-</div> 
-
-</div>
+ </div>   
 <!-- Footer -->
 <footer class="text-center text-lg-start text-white">
     <section class="cotent">
@@ -347,5 +313,8 @@
 <script src="OwlCarousel/dist/owl.carousel.min.js"></script>
 <!-- js script -->
 <script src="scripts/script.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.min.js"></script>
+
 </body>
 </html>

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @font-face {
   font-family: myFirstFont;
@@ -28,6 +29,9 @@ body {
   outline: none;
   background-color: transparent !important;
   color: white;
+}
+.superNav select option {
+  color: black;
 }
 .superNav strong {
   color: white !important;
@@ -807,7 +811,7 @@ footer .contacts_social {
     right: 0px;
   }
   h2.title, .suggested2 h3 {
-    font-size: 35px;
+    font-size: 30px !important;
   }
   .suggested2 .owl-nav button {
     top: 35% !important;
@@ -981,5 +985,580 @@ h3.title {
     height: 70px;
     font-size: 30px;
     line-height: 70px;
+  }
+}
+.wrapper :focus {
+  outline: none;
+}
+.wrapper a {
+  text-decoration: none;
+}
+.wrapper textarea {
+  resize: none;
+}
+.wrapper input, .wrapper textarea, .wrapper select, .wrapper button {
+  font-size: 15px;
+  color: #666;
+}
+.wrapper ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.wrapper img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+.wrapper .wrapper {
+  max-width: 600px;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.wrapper .wizard > .steps .current-info, .wrapper .wizard > .steps .number {
+  display: none;
+}
+.wrapper #wizard {
+  min-height: 570px;
+  background: #fff;
+  padding: 107px 75px 65px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.wrapper .steps {
+  margin-bottom: 30px;
+}
+.wrapper .steps ul {
+  display: flex;
+  position: relative;
+}
+.wrapper .steps ul li {
+  width: 25%;
+  margin-right: 10px;
+}
+.wrapper .steps ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 7px;
+  background: #7b7b7b;
+  border-radius: 3.5px;
+}
+.wrapper .steps ul li.first a, .wrapper .steps ul li.checked a {
+  background: var(--primary-color);
+  transition: all 0.5s ease;
+}
+.wrapper .steps ul:before {
+  content: "البيانات الشخصية ";
+  font-size: 22px;
+  color: #333;
+  top: -38px;
+  position: absolute;
+}
+.wrapper .steps ul.step-2:before {
+  content: "معلومات اضافية ";
+}
+.wrapper .steps ul.step-3:before {
+  content: "طلباتك";
+}
+.wrapper .steps ul.step-4:before {
+  content: "طريقة الدفع";
+}
+.wrapper .steps ul.step-5:before {
+  content: " تم الدفع";
+}
+.wrapper .form-row {
+  margin-bottom: 24px;
+}
+.wrapper .form-row label {
+  margin-bottom: 8px;
+  display: block;
+}
+.wrapper .form-row.form-group {
+  display: flex;
+}
+.wrapper .form-row.form-group .form-holder {
+  width: 50%;
+  margin-right: 21px;
+}
+.wrapper .form-row.form-group .form-holder:last-child {
+  margin-right: 0;
+}
+.wrapper .form-holder {
+  position: relative;
+}
+.wrapper .form-holder i {
+  position: absolute;
+  top: 11px;
+  right: 19px;
+  font-size: 17px;
+  color: #999;
+}
+.wrapper .form-control {
+  height: 42px;
+  border: 1px solid #e6e6e6;
+  background: none;
+  width: 100%;
+  padding: 0 18px;
+}
+.wrapper .form-control:focus {
+  border-color: #f3d4b7;
+}
+.wrapper .form-control::-webkit-input-placeholder {
+  color: #999;
+  font-size: 13px;
+}
+.wrapper .form-control::-moz-placeholder {
+  color: #999;
+  font-size: 13px;
+}
+.wrapper .form-control:-ms-input-placeholder {
+  color: #999;
+  font-size: 13px;
+}
+.wrapper .form-control:-moz-placeholder {
+  color: #999;
+  font-size: 13px;
+}
+.wrapper textarea.form-control {
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+.wrapper .option {
+  color: #999;
+}
+.wrapper .actions ul {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.wrapper .actions ul.step-last {
+  justify-content: flex-end;
+}
+.wrapper .actions ul.step-last li:first-child {
+  display: none;
+}
+.wrapper .actions li a {
+  padding: 0;
+  border: none;
+  display: inline-flex;
+  height: 51px;
+  width: 135px;
+  align-items: center;
+  justify-content: center;
+  background: var(--secondary_color);
+  cursor: pointer;
+  color: #fff !important;
+  position: relative;
+  text-decoration: none;
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.3s;
+  font-weight: 400;
+}
+.wrapper .actions li a:before {
+  content: "\f177";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: #fff;
+  font-family: "FontAwesome";
+  transform: translateZ(0);
+}
+.wrapper .actions li a:hover {
+  background: var(--secondary_color);
+}
+.wrapper .actions li a:hover:before {
+  animation-name: hvr-icon-wobble-horizontal;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+.wrapper .actions li[aria-disabled=true] a {
+  display: none;
+}
+.wrapper .actions li:first-child a {
+  background: #615e5e;
+  padding-left: 48px;
+}
+.wrapper .actions li:first-child a:before {
+  content: "\f178";
+  left: 26px;
+}
+.wrapper .actions li:first-child a:hover {
+  background: var(--secondary_color);
+}
+.wrapper .actions li:last-child a {
+  width: 180px;
+  font-weight: 400;
+}
+.wrapper .actions li:last-child a:before {
+  right: 30px;
+}
+.wrapper .checkbox {
+  position: relative;
+}
+.wrapper .checkbox label {
+  padding-left: 21px;
+  cursor: pointer;
+  color: #999;
+}
+.wrapper .checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.wrapper .checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+.wrapper .checkmark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 12px;
+  width: 13px;
+  border-radius: 2px;
+  background-color: #ebebeb;
+  border: 1px solid #ccc;
+  font-family: "Font Awesome";
+  color: #000;
+  font-size: 10px;
+  font-weight: bolder;
+}
+.wrapper .checkmark:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  content: "\f178";
+}
+.wrapper .checkbox-circle {
+  margin-top: 41px;
+  margin-bottom: 46px;
+}
+.wrapper .checkbox-circle label {
+  cursor: pointer;
+  padding-left: 26px;
+  color: #999;
+  display: block;
+  margin-bottom: 15px;
+  position: relative;
+}
+.wrapper .checkbox-circle label.active .tooltip {
+  display: block;
+}
+.wrapper .checkbox-circle input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.wrapper .checkbox-circle input:checked ~ .checkmark:after {
+  display: block;
+}
+.wrapper .checkbox-circle .checkmark {
+  position: absolute;
+  top: 11px;
+  left: 0;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: #ebebeb;
+  border: 1px solid #cdcdcd;
+}
+.wrapper .checkbox-circle .checkmark:after {
+  content: "";
+  top: 6px;
+  left: 6px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #666666;
+  position: absolute;
+  display: none;
+}
+.wrapper .checkbox-circle .tooltip {
+  padding: 9px 22px;
+  background: #f2f2f2;
+  line-height: 1.8;
+  position: relative;
+  margin-top: 16px;
+  margin-bottom: 28px;
+  display: none;
+}
+.wrapper .checkbox-circle .tooltip:before {
+  content: "";
+  border-bottom: 10px solid #f2f2f2;
+  border-right: 9px solid transparent;
+  border-left: 9px solid transparent;
+  position: absolute;
+  bottom: 100%;
+}
+.wrapper .product {
+  margin-bottom: 33px;
+}
+.wrapper .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 30px;
+}
+.wrapper .item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border: none;
+}
+.wrapper .item .left {
+  display: flex;
+  align-items: center;
+}
+.wrapper .item .thumb {
+  display: inline-flex;
+  width: 100px;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+}
+.wrapper .item .purchase {
+  display: inline-block;
+  margin-left: 21px;
+}
+.wrapper .item .purchase h6 {
+  font-size: 16px;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+.wrapper .item .purchase h6 a {
+  color: #333;
+}
+.wrapper .item .price {
+  font-size: 16px;
+}
+.wrapper .checkout {
+  margin-bottom: 44px;
+}
+.wrapper .checkout span.heading {
+  font-weight: 500;
+  margin-right: 5px;
+}
+.wrapper .checkout .subtotal {
+  margin-bottom: 18px;
+}
+.wrapper .checkout .shipping {
+  margin-bottom: 19px;
+}
+.wrapper .checkout .shipping span.heading {
+  margin-right: 4px;
+}
+.wrapper .checkout .total-price {
+  color: #333;
+  font-weight: 700;
+}
+@keyframes hvr-icon-wobble-horizontal {
+  16.65% {
+    transform: translateX(6px);
+  }
+  33.3% {
+    transform: translateX(-5px);
+  }
+  49.95% {
+    transform: translateX(4px);
+  }
+  66.6% {
+    transform: translateX(-2px);
+  }
+  83.25% {
+    transform: translateX(1px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@media (max-width: 1500px) {
+  .wrapper .wrapper {
+    height: auto;
+  }
+}
+@media (max-width: 1199px) {
+  .wrapper .wrapper {
+    height: 100vh;
+  }
+  .wrapper #wizard {
+    margin-right: 40px;
+    min-height: 829px;
+  }
+}
+@media (max-width: 991px) {
+  .wrapper .wrapper {
+    justify-content: center;
+  }
+  .wrapper .wrapper .image-holder {
+    display: none;
+  }
+  .wrapper .wrapper form {
+    width: 60%;
+  }
+  .wrapper #wizard {
+    margin-right: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .wrapper .wrapper {
+    height: auto;
+    display: block;
+  }
+  .wrapper .wrapper .image-holder {
+    width: 100%;
+    display: block;
+  }
+  .wrapper .wrapper form {
+    width: 100%;
+  }
+  .wrapper #wizard {
+    min-height: unset;
+    padding: 70px 20px 40px;
+  }
+  .wrapper .form-row.form-group {
+    display: block;
+  }
+  .wrapper .form-row.form-group .form-holder {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+  .wrapper .item .purchase {
+    margin-left: 11px;
+  }
+}
+.wrapper .card {
+  border: 0;
+  border-radius: 0px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.03);
+  transition: 0.5s;
+}
+.wrapper .padding {
+  padding: 3rem !important;
+}
+.wrapper h5.card-title {
+  font-size: 15px;
+}
+.wrapper .fw-400 {
+  font-weight: 400 !important;
+}
+.wrapper .card-title {
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 0;
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(77, 82, 89, 0.07);
+}
+.wrapper .card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+.wrapper .form-group {
+  margin-bottom: 1rem;
+}
+.wrapper .form-control {
+  border-color: #ebebeb;
+  border-radius: 2px;
+  color: #8b95a5;
+  padding: 5px 12px;
+  font-size: 14px;
+  line-height: inherit;
+  transition: 0.2s linear;
+}
+.wrapper .card-body > *:last-child {
+  margin-bottom: 0;
+}
+.wrapper .btn-primary {
+  background-color: #33cabb;
+  border-color: #33cabb;
+  color: #fff;
+}
+.wrapper .btn-bold {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+}
+.wrapper .btn-primary:hover {
+  background-color: #52d3c7;
+  border-color: #52d3c7;
+  color: #fff;
+}
+.wrapper .btn:hover {
+  cursor: pointer;
+}
+.wrapper .form-control:focus {
+  border-color: #6545eb;
+  color: #4d5259;
+  box-shadow: 0 0 0 0.1rem rgba(101, 69, 235, 0);
+}
+.wrapper .custom-radio {
+  cursor: pointer;
+}
+.wrapper .custom-control {
+  display: flex;
+  min-width: 18px;
+}
+.wrapper .heading {
+  color: #6645eb;
+}
+.wrapper .total {
+  float: right;
+  color: #6645eb;
+}
+.wrapper svg {
+  width: 100px;
+  display: block;
+  margin: 40px auto 0;
+}
+.wrapper .path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+}
+.wrapper .path.circle {
+  animation: dash 0.9s ease-in-out;
+}
+.wrapper .path.line {
+  stroke-dashoffset: 1000;
+  animation: dash 0.9s 0.35s ease-in-out forwards;
+}
+.wrapper .path.check {
+  stroke-dashoffset: -100;
+  animation: dash-check 0.9s 0.35s ease-in-out forwards;
+}
+.wrapper p {
+  text-align: center;
+  margin: 20px 0 60px;
+  font-size: 1.25em;
+}
+.wrapper p.success {
+  color: #73AF55;
+}
+.wrapper p.error {
+  color: #D06079;
+}
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash-check {
+  0% {
+    stroke-dashoffset: -100;
+  }
+  100% {
+    stroke-dashoffset: 900;
   }
 }/*# sourceMappingURL=style.css.map */
