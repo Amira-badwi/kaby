@@ -821,6 +821,12 @@ h3.title {
 }
 
 @media screen and (max-width: 600px) {
+  #carouselExampleControls.carousel.slide .carousel-item .dark_link .text-center h2 {
+    font-size: 25px;
+  }
+  #carouselExampleControls.carousel.slide .carousel-item p {
+    font-size: 15px;
+  }
   #accordionFlushExample {
     display: contents;
     z-index: 999;
