@@ -129,12 +129,17 @@ function myFunction(x) {
     }
   }
   
+
+
   var x = window.matchMedia("(max-width: 600px)")
   if(collapse1) {
 
       myFunction(x) // Call listener function at run time
       x.addListener(myFunction)
   }
+  
+
+
 ///
 $(function(){
 	$("#wizard").steps({
@@ -158,18 +163,49 @@ $(function(){
             if ( newIndex === 3 ) {
                 $('.steps ul').addClass('step-4');
                 $('.actions ul').addClass('step-last');
+                const box = document.querySelectorAll("[name='payment']");
+          if(box){
+              box.forEach(e=>{     
+                e.addEventListener("click" ,()=>{
+                  console.log(e);
+                box.forEach (ele=>{
+                  let s= ele.getAttribute("id") ;
+                  let selected =document.querySelector(`div#${s}`) ;
+                  if(selected){
+                              selected.classList.add("d-none") ;
+                              selected.classList.remove("d-block") ;
+
+                            }
+            
+                })
+                let check= e.getAttribute("id") ;
+
+                let cheked =document.querySelector(`div#${check}`) ;
+                if(cheked){
+                  cheked.classList.add("d-block") ;
+                  cheked.classList.remove("d-none") ;
+                }
+
+          })
+                })
+              }
             } else {
                 $('.steps ul').removeClass('step-4');
                 $('.actions ul').removeClass('step-last');
             }
             if ( newIndex === 4 ) {
-              $('.steps ul').addClass('step-5');
+              $('.steps ul').removeClass('step-5');
                 $('.actions ul').addClass('step-last');
             } else {
                 $('.steps ul').removeClass('step-5');
                 $('.actions ul').removeClass('step-last');
             }
-
+            if (currentIndex == 3) {
+              var $input = $('<button type="submit" class="btn btn-success btn-lg">تاكيد الدفع <button/>');
+              $input.appendTo($('ul[aria-label=Pagination]'));
+          } else {
+              $('ul[aria-label=Pagination] input[value="Submit"]').remove();
+          }
             return true; 
         },
         labels: {
