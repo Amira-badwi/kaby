@@ -535,14 +535,6 @@ footer .footerTop_form .form-input-wrapper input:focus + label, footer .footerTo
   border-radius: 5px;
 }
 
-@media (max-width: 600px) {
-  .tab {
-    flex-wrap: wrap;
-  }
-  .tablinks {
-    flex: 100%;
-  }
-}
 .categories h1 {
   color: var(--primary-color);
 }
@@ -745,151 +737,6 @@ footer .contacts_social {
   text-align: justify;
 }
 
-@media screen and (max-width: 800px) {
-  .table_fav tbody .add a {
-    font-size: 10px;
-    padding: 10px 0px;
-  }
-  .table_fav tbody tr p, .table_fav tbody tr h2 {
-    font-size: 12px;
-  }
-  .table_fav tbody tr img {
-    height: 65px;
-  }
-  .table_fav .add a {
-    font-size: 11px !important;
-  }
-  .products-cart h3.h5, .products-cart p {
-    font-size: 11px;
-  }
-  .products-cart th {
-    font-size: 15px;
-  }
-  .products-cart h3.h4 {
-    font-size: 20px;
-  }
-  #carouselExampleControls .carousel-item {
-    aspect-ratio: 1.4/1 !important;
-  }
-  #carouselExampleControls.carousel.slide button {
-    width: 30px;
-    height: 30px;
-  }
-  #carouselExampleControls.carousel.slide button i {
-    font-size: 16px !important;
-  }
-  .product-slider .carousel-indicators {
-    bottom: 10px !important;
-  }
-  .item .card-sl a {
-    font-size: 13px;
-  }
-  .suggested2 h2 {
-    font-size: 16px;
-  }
-  .parent h2 {
-    font-size: 26px;
-  }
-  #product-slider.carousel.slide h2 {
-    font-size: 25px !important;
-  }
-  #product-slider.carousel.slide p {
-    font-size: 16x !important;
-  }
-  #product-slider.carousel.slide a {
-    font-size: 15px !important;
-    width: 140px !important;
-  }
-  .banner .row {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: rgba(185, 184, 185, 0.1882352941);
-  }
-  .banner .row h1 {
-    font-size: 20px !important;
-    margin: 0px 0px 20px !important;
-  }
-  .owl-nav {
-    display: block !important;
-  }
-  .owl-nav button {
-    top: 55%;
-    position: absolute;
-    background-color: var(--primary-color) !important;
-    border-radius: 50% !important;
-    background-color: var(--primary-color);
-    width: 30px;
-    display: block;
-    height: 30px;
-    border-radius: 50%;
-  }
-  .owl-nav button span {
-    color: white;
-  }
-  .owl-nav .owl-prev {
-    left: 0px !important;
-  }
-  .owl-nav .owl-next {
-    right: 0px;
-  }
-  h2.title, .suggested2 h3 {
-    font-size: 30px !important;
-  }
-  .suggested2 .owl-nav button {
-    top: 35% !important;
-  }
-}
-h3.title {
-  font-weight: 500;
-  font-size: 54px;
-  text-align: center;
-  color: var(--primary-color);
-}
-
-@media screen and (max-width: 600px) {
-  #carouselExampleControls.carousel.slide .carousel-item .dark_link .text-center h2 {
-    font-size: 25px;
-  }
-  #carouselExampleControls.carousel.slide .carousel-item p {
-    font-size: 15px;
-  }
-  #accordionFlushExample {
-    display: contents;
-    z-index: 999;
-    width: 95%;
-    background-color: rgb(255, 255, 255);
-  }
-  #accordionFlushExample .item {
-    padding: 0px 20px !important;
-  }
-  .contain-all {
-    display: block !important;
-  }
-  .contain-all .products {
-    width: 100%;
-  }
-  .parent .tablinks {
-    font-size: 16px;
-  }
-  .tab button {
-    padding: 0px;
-    max-width: 90px;
-    margin: 0px !important;
-    text-align: center;
-  }
-  .item .card-image img {
-    margin-bottom: -90px !important;
-  }
-  .card-sl {
-    padding-top: 90px !important;
-  }
-  .details p {
-    font-size: 13px !important;
-  }
-  .details h2 {
-    font-size: 16px !important;
-  }
-}
 .registration-form {
   padding: 50px 0;
 }
@@ -1787,4 +1634,163 @@ h3.title {
   display: inline-block;
   border-radius: 5px;
   text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .table_fav tbody .add a {
+    font-size: 10px;
+    padding: 10px 0px;
+  }
+  .table_fav tbody tr p, .table_fav tbody tr h2 {
+    font-size: 12px;
+  }
+  .table_fav tbody tr img {
+    height: 65px !important;
+  }
+  .table_fav .add a {
+    font-size: 11px !important;
+  }
+  .products-cart h3.h5, .products-cart p {
+    font-size: 11px !important;
+  }
+  .products-cart th {
+    font-size: 15px !important;
+  }
+  .products-cart h3.h4 {
+    font-size: 20px !important;
+  }
+  .products-cart table th {
+    padding-right: 5px !important;
+    text-align: center !important;
+  }
+  .products-cart table h3.h5 {
+    text-align: center !important;
+  }
+  #carouselExampleControls .carousel-item {
+    aspect-ratio: 1.4/1 !important;
+  }
+  #carouselExampleControls.carousel.slide button {
+    width: 30px;
+    height: 30px;
+  }
+  #carouselExampleControls.carousel.slide button i {
+    font-size: 16px !important;
+  }
+  .product-slider .carousel-indicators {
+    bottom: 10px !important;
+  }
+  .item .card-sl a {
+    font-size: 13px;
+  }
+  .suggested2 h2 {
+    font-size: 16px;
+  }
+  .parent h2 {
+    font-size: 26px;
+  }
+  #product-slider.carousel.slide h2 {
+    font-size: 25px !important;
+  }
+  #product-slider.carousel.slide p {
+    font-size: 16x !important;
+  }
+  #product-slider.carousel.slide a {
+    font-size: 15px !important;
+    width: 140px !important;
+  }
+  .banner .row {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgba(185, 184, 185, 0.1882352941);
+  }
+  .banner .row h1 {
+    font-size: 20px !important;
+    margin: 0px 0px 20px !important;
+  }
+  .owl-nav {
+    display: block !important;
+  }
+  .owl-nav button {
+    top: 55%;
+    position: absolute;
+    background-color: var(--primary-color) !important;
+    border-radius: 50% !important;
+    background-color: var(--primary-color);
+    width: 30px;
+    display: block;
+    height: 30px;
+    border-radius: 50%;
+  }
+  .owl-nav button span {
+    color: white;
+  }
+  .owl-nav .owl-prev {
+    left: 0px !important;
+  }
+  .owl-nav .owl-next {
+    right: 0px;
+  }
+  h2.title, .suggested2 h3 {
+    font-size: 30px !important;
+  }
+  .suggested2 .owl-nav button {
+    top: 35% !important;
+  }
+}
+h3.title {
+  font-weight: 500;
+  font-size: 54px;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+@media screen and (max-width: 600px) {
+  .tab {
+    flex-wrap: wrap;
+  }
+  .tablinks {
+    flex: 100%;
+  }
+  #carouselExampleControls.carousel.slide .carousel-item .dark_link .text-center h2 {
+    font-size: 25px;
+  }
+  #carouselExampleControls.carousel.slide .carousel-item p {
+    font-size: 15px;
+  }
+  #accordionFlushExample {
+    display: contents;
+    z-index: 999;
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+  }
+  #accordionFlushExample .item {
+    padding: 0px 20px !important;
+  }
+  .contain-all {
+    display: block !important;
+  }
+  .contain-all .products {
+    width: 100%;
+  }
+  .parent .tablinks {
+    font-size: 16px;
+  }
+  .tab button {
+    padding: 0px;
+    max-width: 90px;
+    margin: 0px !important;
+    text-align: center;
+  }
+  .item .card-image img {
+    margin-bottom: -90px !important;
+  }
+  .card-sl {
+    padding-top: 90px !important;
+  }
+  .details p {
+    font-size: 13px !important;
+  }
+  .details h2 {
+    font-size: 16px !important;
+  }
 }/*# sourceMappingURL=style.css.map */
