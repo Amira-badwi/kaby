@@ -804,7 +804,6 @@ footer .footerTop_form .form-input-wrapper input:focus + label, footer .footerTo
 
 .breadcrumb {
   padding: 20px !important;
-  background-image: url(../images/flowers-background-copy-space.jpg);
   background-size: contain;
   font-size: large;
 }
@@ -1676,9 +1675,6 @@ footer .contacts_social {
   border-bottom: 1px solid rgb(218, 208, 208);
 }
 .products-cart table th {
-  padding-right: 20px !important;
-}
-.products-cart table th {
   padding: 5px;
 }
 .products-cart table p {
@@ -1885,7 +1881,7 @@ h3.title {
   .table_fav tbody tr img {
     height: 65px !important;
   }
-  .products-cart table h3.h5, .products-cart p {
+  .products-cart table h3.h5, .products-cart table p {
     font-size: 12px !important;
   }
   .products-cart th {

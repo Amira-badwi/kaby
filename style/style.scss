@@ -958,7 +958,6 @@ color: #535351;
   .breadcrumb {
     padding: 20px !important;
     // background-color: #deecfbc2;
-    background-image: url(../images/flowers-background-copy-space.jpg);
     background-size: contain;
     font-size: large;
 a{
@@ -1334,9 +1333,7 @@ img {
         border-bottom: 1px solid rgb(218, 208, 208);
       }
   
-      th {
-        padding-right: 20px !important;
-      }
+      
   
       th {
         padding: 5px;
@@ -1577,7 +1574,7 @@ img {
     }
    
     .products-cart {
-     table h3.h5 , p {
+     table h3.h5 , table p {
         font-size: 12px !important;
      
       }
