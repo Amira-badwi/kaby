@@ -957,9 +957,9 @@ color: #535351;
   }
   .breadcrumb {
     padding: 20px !important;
-    background-color: #deecfbc2;
-    background-image: url(../images/img.svg);
-    background-size: 175%;
+    // background-color: #deecfbc2;
+    background-image: url(../images/flowers-background-copy-space.jpg);
+    background-size: contain;
     font-size: large;
 a{
     text-decoration: none;
@@ -1285,7 +1285,17 @@ img {
   .products-cart {
     margin: 0px 1%;
     padding: 20px 0px;
-  
+    button.update {
+      font-size: 20px;
+      border-radius: 5px;
+      border: 2px solid var(--secondary_color);
+      padding: 3px 20px;
+      margin-right: auto;
+      color: white;
+      margin-top: 20px;
+      display: block;
+      background-color: var(--primary-color);
+    }
     table {
       .remove {
         border: none;
@@ -1318,7 +1328,7 @@ img {
         font-weight: 600;
         color: #535351;
       }
-  
+     
   
       tr {
         border-bottom: 1px solid rgb(218, 208, 208);
@@ -1419,6 +1429,7 @@ img {
     }
     p{
       font-weight: 400;
+      font-size: 22px;
     }
     ul{
       list-style-type: none;
@@ -1511,16 +1522,24 @@ img {
     }
     .add {
       width: 25%;
-      a{
-      text-decoration: none;
+      button{
       color: white;
       background-color: var(--secondary_color);
-      font-size: 1rem;
-      font-weight: 600;
+      font-size: 19px;
+      font-weight: 900;
       padding: 10px;
       display: inline-block;
       border-radius: 5px;
-      text-align: center;
+      border: none;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      gap: 5px;
+    
+      i{
+        font-size: 15px;
+      
+      }
   
     } }
   
@@ -1549,21 +1568,14 @@ img {
      .bg-white {
       height: auto;
      }}
-    .table_fav tbody .add a {
-      font-size: 10px;
-      padding:10px 0px;
-    }
+  
     .table_fav tbody tr p , .table_fav tbody tr h2 {
       font-size: 12px ;
     }
     .table_fav tbody tr img {
       height:  65px !important;
     }
-    .table_fav {
-      .add a {
-        font-size: 11px !important;
-      }
-    }
+   
     .products-cart {
      table h3.h5 , p {
         font-size: 12px !important;

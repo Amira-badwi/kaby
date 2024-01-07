@@ -804,9 +804,8 @@ footer .footerTop_form .form-input-wrapper input:focus + label, footer .footerTo
 
 .breadcrumb {
   padding: 20px !important;
-  background-color: rgba(222, 236, 251, 0.7607843137);
-  background-image: url(../images/img.svg);
-  background-size: 175%;
+  background-image: url(../images/flowers-background-copy-space.jpg);
+  background-size: contain;
   font-size: large;
 }
 .breadcrumb a {
@@ -1635,6 +1634,17 @@ footer .contacts_social {
   margin: 0px 1%;
   padding: 20px 0px;
 }
+.products-cart button.update {
+  font-size: 20px;
+  border-radius: 5px;
+  border: 2px solid var(--secondary_color);
+  padding: 3px 20px;
+  margin-right: auto;
+  color: white;
+  margin-top: 20px;
+  display: block;
+  background-color: var(--primary-color);
+}
 .products-cart table .remove {
   border: none;
   background-color: transparent;
@@ -1746,6 +1756,7 @@ footer .contacts_social {
 }
 .sidebar p {
   font-weight: 400;
+  font-size: 22px;
 }
 .sidebar ul {
   list-style-type: none;
@@ -1829,16 +1840,22 @@ footer .contacts_social {
 .table_fav tbody .add {
   width: 25%;
 }
-.table_fav tbody .add a {
-  text-decoration: none;
+.table_fav tbody .add button {
   color: white;
   background-color: var(--secondary_color);
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 19px;
+  font-weight: 900;
   padding: 10px;
   display: inline-block;
   border-radius: 5px;
-  text-align: center;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+}
+.table_fav tbody .add button i {
+  font-size: 15px;
 }
 
 h3.title {
@@ -1862,18 +1879,11 @@ h3.title {
   .sidebar .bg-white {
     height: auto;
   }
-  .table_fav tbody .add a {
-    font-size: 10px;
-    padding: 10px 0px;
-  }
   .table_fav tbody tr p, .table_fav tbody tr h2 {
     font-size: 12px;
   }
   .table_fav tbody tr img {
     height: 65px !important;
-  }
-  .table_fav .add a {
-    font-size: 11px !important;
   }
   .products-cart table h3.h5, .products-cart p {
     font-size: 12px !important;
