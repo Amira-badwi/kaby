@@ -1963,6 +1963,12 @@ h3.title {
   }
 }
 @media screen and (max-width: 600px) {
+  .profile_orders table th {
+    font-size: 13px;
+  }
+  .profile_orders table td {
+    font-size: 12px;
+  }
   .tab {
     flex-wrap: wrap;
   }
@@ -2026,5 +2032,11 @@ h3.title {
     height: 70px;
     font-size: 30px;
     line-height: 70px;
+  }
+  .adrsses h3 {
+    font-size: 14px;
+  }
+  .adrsses .adress label {
+    font-size: 12px !important;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -112,8 +112,8 @@
 <!-- container -->
 <div class="container-fluid sidebar_row ">
   <div class="row mx-2 ">
-    <div class="col-lg-3 col-md-5 col-12 sidebar mt-3 ">
-      <div class="bg-white px-2 ">
+     <div class="col-lg-3 col-md-5 col-12 sidebar mt-3 ">
+      <div class="bg-white ">
          <h3 class=" pt-4 text-center">هلا</h3>
          <p class="mb-5 text-center">Amira</p>
          <ul class="col-sm-8 col-md-12 p-0 m-auto " >
@@ -124,7 +124,7 @@
             <li > <a href="#">تسجيل الخروج  </a> </li>
          </ul>
       </div>
-    </div>
+     </div>
       <div class="col-lg-9 col-md-7 col-12">
         <div class="bg-white my-3    text-center nav_breadcrumb py-2 ">
           <!-- navbar -->
@@ -133,26 +133,27 @@
               <span  class="breadcrumb-item active"  aria-current="page">حسابي</span>
               <a  href="#" class="breadcrumb-item primary-color"> الرئيسية</a>
             </p>
-        </nav>
+           </nav>
           <h3 >حسابي</h3>
         </div>
         <!-- adrsses -->
-        <div class="bg-white  mt-4 py-3 px-5 paragraf adrsses mb-3">
+        <div class="bg-white  mt-4 py-3 px-lg-5 px-2 paragraf adrsses mb-3">
           <h2 class="py-3 d-flex justify-content-between align-items-end" > 
             <span class="mb-0 bold  ">العناوين</span>
-            <a href="add_adress.html">اضافة عنوان جديد</a>
+            <a href="add_adress.html" class="d-md-block d-none">اضافة عنوان جديد</a>
+            <a href="add_adress.html" class="d-md-none">+</a>
           </h2>
           <!-- default adress -->
           <div class="my-3">
-           <h3 class="mt-5 mb-3" >العنوان الافتراضي</h3>
+             <h3 class="mt-5 mb-3" >العنوان الافتراضي</h3>
             <div class="adress border py-3">
                 <!--  section head -->
                   <div class="d-flex">
-                    <a href="modify_adress.html" class=" mx-2"> <i class="far fa-edit"></i>تعديل </a>
-                    <button class=" mx-2"> <i class="fas fa-trash-alt"></i>حذف</button>
+                    <a href="modify_adress.html" class=" mx-2"> <i class="far fa-edit"></i> <span class="d-md-inline d-none">تعديل</span> </a>
+                    <button class=" mx-2"> <i class="fas fa-trash-alt"></i> <span class="d-md-inline d-none">حذف</span> </button>
                     <div class="form-check form-switch d-flex" >
-                        <input class="form-check-input mx-2" type="radio" name="adress" role="switch" id="flexSwitchCheckChecked" checked>
-                        <label class="form-check-label" for="flexSwitchCheckChecked">تعيين كعنوان افتراضي </label>
+                        <input class="form-check-input mx-2" type="radio" name="adress" role="switch" id="flexSwitchCheckChecked" >
+                        <label class="form-check-label" for="flexSwitchCheckChecked"> عنوان افتراضي </label>
                     </div>
                   </div>
            
@@ -165,15 +166,15 @@
           </div>
           <!-- other addresses -->
           <div class="my-3">
-           <h3 class="mt-5 mb-3 "> عناوين آخرى</h3>
-           <div class="adress border py-3">
+            <h3 class="mt-5 mb-3 "> عناوين آخرى</h3>
+             <div class="adress border py-3">
             <!--  section head -->
               <div class="d-flex">
-                <a href="modify_adress.html" class=" mx-2"> <i class="far fa-edit"></i>تعديل </a>
-                <button class=" mx-2"> <i class="fas fa-trash-alt"></i>حذف</button>
+                <a href="modify_adress.html" class=" mx-2"> <i class="far fa-edit"></i> <span class="d-md-inline d-none">تعديل</span> </a>
+                <button class=" mx-2"> <i class="fas fa-trash-alt"></i> <span class="d-md-inline d-none">حذف</span> </button>
                 <div class="form-check form-switch d-flex" >
                     <input class="form-check-input mx-2" type="radio" name="adress" role="switch" id="flexSwitchCheckChecked" checked>
-                    <label class="form-check-label" for="flexSwitchCheckChecked">تعيين كعنوان افتراضي </label>
+                    <label class="form-check-label" for="flexSwitchCheckChecked"> عنوان افتراضي </label>
                 </div>
               </div>
        
@@ -182,24 +183,7 @@
                 <p class="d-flex flex-wrap mx-3"><span>العنوان:</span> <span  class="mx-3">مصر - بنى سويف  </span></p>
                 <p  class="mx-3"><span >التليفون:</span> <span dir="ltr" class="bold_text mx-3">+12356777544 </span></p>
             </div>   
-           </div>
-           <div class="adress border py-3">
-            <!--  section head -->
-              <div class="d-flex">
-                <a href="modify_adress.html" class=" mx-2"> <i class="far fa-edit"></i>تعديل </a>
-                <button class=" mx-2"> <i class="fas fa-trash-alt"></i>حذف</button>
-                <div class="form-check form-switch d-flex" >
-                    <input class="form-check-input mx-2" type="radio" name="adress" role="switch" id="flexSwitchCheckChecked" checked>
-                    <label class="form-check-label" for="flexSwitchCheckChecked">تعيين كعنوان افتراضي </label>
-                </div>
-              </div>
-       
-            <div class="adress_details my-2">
-                <p  class="mx-3"><span>الاسم:</span> <span  class="mx-3">   اميرة بدوى</span></p>
-                <p class="d-flex flex-wrap mx-3"><span>العنوان:</span> <span  class="mx-3">مصر - بنى سويف  </span></p>
-                <p  class="mx-3"><span >التليفون:</span> <span dir="ltr" class="bold_text mx-3">+12356777544 </span></p>
-            </div>   
-        </div>
+            </div>
           </div>
        </div>
       </div>

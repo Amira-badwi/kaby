@@ -1679,6 +1679,12 @@ h2.title , .suggested2 h3 {
   }
  
   @media screen and (max-width:600px){
+    .profile_orders table {
+        th{
+          font-size: 13px;
+        }
+        td{font-size: 12px;}
+    } 
     .tab {
       flex-wrap: wrap;
     }
@@ -1753,5 +1759,15 @@ h2.title , .suggested2 h3 {
           height: 70px;
           font-size: 30px;
           line-height: 70px;
+      }
+      .adrsses{
+        h3{
+          font-size: 14px;
+        }
+        .adress{
+          label{
+            font-size: 12px !important;
+          }
+        }
       }
   }
