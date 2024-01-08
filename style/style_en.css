@@ -17,11 +17,11 @@
 }
 
 body {
-  direction: rtl;
   background-color: rgba(251, 238, 249, 0.4470588235) !important;
 }
 
 .superNav {
+  direction: rtl;
   font-size: 13px;
   background-color: var(--secondary_color) !important;
 }
@@ -61,7 +61,7 @@ body {
   vertical-align: top;
   font-size: 10px;
   line-height: 1.5;
-  margin-left: -23px;
+  margin-left: -13px;
   margin-top: 2px;
 }
 
@@ -69,6 +69,9 @@ nav.navbar {
   background-color: white !important;
   border-bottom: 4px solid var(--secondary_color);
   padding: 0px !important;
+}
+nav.navbar form {
+  direction: rtl;
 }
 nav.navbar .navbar-brand {
   padding: 0px;
@@ -152,10 +155,10 @@ nav.navbar input {
   font-size: 19px;
 }
 #carouselExampleControls.carousel.slide .carousel-control-prev {
-  right: 20px;
+  left: 20px;
 }
 #carouselExampleControls.carousel.slide .carousel-control-next {
-  left: 20px;
+  right: 20px;
 }
 #carouselExampleControls.carousel.slide button {
   top: 45%;
@@ -181,7 +184,7 @@ nav.navbar input {
   height: 50px;
   background-color: rgba(221, 221, 221, 0);
   border-radius: 10px;
-  float: left;
+  float: right;
   border: none;
   outline: none;
   cursor: pointer;
@@ -318,7 +321,7 @@ h2.title {
 .profile-card-6 .profile-name {
   position: absolute;
   top: 10px;
-  left: 10px;
+  right: 10px;
   font-size: 25px;
   font-weight: bold;
   color: var(--primary-color);
@@ -337,7 +340,6 @@ h2.title {
 .item {
   /* Card Styles */
   position: relative;
-  direction: rtl;
 }
 .item .card-sl {
   border-radius: 8px;
@@ -359,9 +361,9 @@ h2.title {
 }
 .item .card-action {
   position: relative;
-  float: left;
+  float: right;
   margin-top: -25px;
-  margin-left: 20px;
+  margin-right: 20px;
   z-index: 2;
   color: #E26D5C;
   background: #fff;
@@ -449,6 +451,9 @@ h2.title {
   margin-top: 20px;
 }
 
+footer a {
+  direction: rtl;
+}
 footer .cotent {
   position: relative;
 }
@@ -510,14 +515,14 @@ footer .btn:not(:disabled):not(.disabled) {
 }
 footer .footerTop_form .form-input-wrapper .btn {
   position: absolute;
-  right: 0;
+  left: 0;
   top: 50%;
   transform: translateY(-50%);
   padding: 5px 0 10px 5px;
 }
 footer .footerTop_form .form-input-wrapper input:focus + label, footer .footerTop_form .form-input-wrapper input:valid + label {
   top: 5%;
-  left: 0px;
+  right: 0px;
   color: rgb(173, 163, 163);
   position: absolute;
 }
@@ -600,7 +605,6 @@ footer .footerTop_form .form-input-wrapper input:focus + label, footer .footerTo
 }
 .profile_details input {
   border-radius: 5px;
-  direction: rtl;
   outline-color: var(--secondary_color);
   border: 1px solid rgb(204, 197, 197);
 }
@@ -610,7 +614,7 @@ footer .footerTop_form .form-input-wrapper input:focus + label, footer .footerTo
   border: none;
   border-radius: 5px;
   padding: 5px 20px;
-  margin-right: auto;
+  margin-left: auto;
   display: block;
 }
 
@@ -702,7 +706,7 @@ footer .footerTop_form .form-input-wrapper input:focus + label, footer .footerTo
 }
 
 .accordion {
-  padding: 10px 15px 0px 0px;
+  padding: 10px 0px 0px 15px;
   width: 200px;
 }
 .accordion h3 {
@@ -718,7 +722,7 @@ footer .footerTop_form .form-input-wrapper input:focus + label, footer .footerTo
 .accordion .accordion-button {
   background-color: transparent;
   color: var(--secondary_color) !important;
-  padding-right: 0px;
+  padding-left: 0px;
 }
 .accordion .accordion-button:not(.collapsed) {
   background-color: transparent;
@@ -769,14 +773,14 @@ footer .footerTop_form .form-input-wrapper input:focus + label, footer .footerTo
 }
 .accordion .item ul#collapse1 {
   list-style: none;
-  border-right: 1px solid #c9bcbc;
+  border-left: 1px solid #c9bcbc;
 }
 .accordion .item ul#collapse1 h3 {
   color: rgba(43, 43, 40, 0.8);
 }
 .accordion .item ul#collapse1 h3 i {
   position: absolute;
-  right: -7px;
+  left: -7px;
   background-color: #ffffff;
 }
 .accordion .item ul#collapse1 ul.show {
@@ -792,8 +796,8 @@ footer .footerTop_form .form-input-wrapper input:focus + label, footer .footerTo
   color: rgba(43, 43, 40, 0.8);
 }
 .accordion .accordion-button::after {
-  margin-right: auto;
-  margin-left: 1px;
+  margin-left: auto;
+  margin-right: 1px;
   margin-top: 5px;
   background-size: 13px;
 }
@@ -962,14 +966,14 @@ footer .contacts_social {
 }
 
 .conditions {
-  padding: 3px 2% 0px 12% !important;
+  padding: 3px 12% 0px 2% !important;
   text-align: justify;
 }
 .conditions ol {
   list-style-type: arabic-indic;
 }
 .conditions > ol, .conditions > ul {
-  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
 .conditions > ol > li, .conditions > ul > li {
   color: var(--primary-bg);
@@ -977,7 +981,7 @@ footer .contacts_social {
   font-weight: 600;
 }
 .conditions > ol li ul, .conditions > ol li ol, .conditions > ul li ul, .conditions > ul li ol {
-  padding: 0px 20px 0px 0px;
+  padding: 0px 0px 0px 20px;
   color: rgb(56, 54, 54);
   font-size: 16px;
   font-weight: 400;
@@ -1003,6 +1007,9 @@ footer .contacts_social {
 
 .sidebar_row {
   position: relative;
+}
+.sidebar_row nav {
+  direction: rtl;
 }
 .sidebar_row .row {
   height: 100%;
@@ -1064,7 +1071,7 @@ footer .contacts_social {
 }
 .wrapper .steps ul li {
   width: 25%;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 .wrapper .steps ul li a {
   display: inline-block;
@@ -1077,17 +1084,17 @@ footer .contacts_social {
   background: var(--primary-color);
   transition: all 0.5s ease;
 }
-.wrapper .steps ul:before {
+.wrapper .steps ul::after {
   content: "البيانات الشخصية ";
   font-size: 22px;
   color: #333;
   top: -38px;
   position: absolute;
 }
-.wrapper .steps ul.step-2:before {
+.wrapper .steps ul.step-2::after {
   content: "معلومات اضافية ";
 }
-.wrapper .steps ul.step-3:before {
+.wrapper .steps ul.step-3::after {
   content: "طريقة الدفع";
 }
 .wrapper .form-row {
@@ -1102,10 +1109,10 @@ footer .contacts_social {
 }
 .wrapper .form-row.form-group .form-holder {
   width: 50%;
-  margin-right: 21px;
+  margin-left: 21px;
 }
 .wrapper .form-row.form-group .form-holder:last-child {
-  margin-right: 0;
+  margin-left: 0;
 }
 .wrapper .form-holder {
   position: relative;
@@ -1113,7 +1120,7 @@ footer .contacts_social {
 .wrapper .form-holder i {
   position: absolute;
   top: 11px;
-  right: 19px;
+  left: 19px;
   font-size: 17px;
   color: #999;
 }
@@ -1156,7 +1163,7 @@ footer .contacts_social {
   justify-content: space-between;
 }
 .wrapper .actions ul.step-last {
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 .wrapper .actions ul.step-last li:first-child {
   display: none;
@@ -1178,11 +1185,11 @@ footer .contacts_social {
   transition-duration: 0.3s;
   font-weight: 400;
 }
-.wrapper .actions li a:before {
+.wrapper .actions li a::after {
   content: "\f177";
   position: absolute;
   top: 15px;
-  left: 15px;
+  right: 15px;
   color: #fff;
   font-family: "FontAwesome";
   transform: translateZ(0);
@@ -1201,11 +1208,11 @@ footer .contacts_social {
 }
 .wrapper .actions li:first-child a {
   background: #615e5e;
-  padding-left: 48px;
+  padding-right: 48px;
 }
 .wrapper .actions li:first-child a:before {
   content: "\f178";
-  left: 26px;
+  right: 26px;
 }
 .wrapper .actions li:first-child a:hover {
   background: var(--secondary_color);
@@ -1215,13 +1222,13 @@ footer .contacts_social {
   font-weight: 400;
 }
 .wrapper .actions li:last-child a:before {
-  right: 30px;
+  left: 30px;
 }
 .wrapper .checkbox {
   position: relative;
 }
 .wrapper .checkbox label {
-  padding-left: 21px;
+  padding-right: 21px;
   cursor: pointer;
   color: #999;
 }
@@ -1230,13 +1237,13 @@ footer .contacts_social {
   opacity: 0;
   cursor: pointer;
 }
-.wrapper .checkbox input:checked ~ .checkmark:after {
+.wrapper .checkbox input:checked ~ .checkmark::before {
   display: block;
 }
 .wrapper .checkmark {
   position: absolute;
   top: 50%;
-  left: 0;
+  right: 0;
   transform: translateY(-50%);
   height: 12px;
   width: 13px;
@@ -1251,7 +1258,7 @@ footer .contacts_social {
 .wrapper .checkmark:after {
   position: absolute;
   top: 50%;
-  left: 50%;
+  right: 50%;
   transform: translate(-50%, -50%);
   display: none;
   content: "\f178";
@@ -1262,7 +1269,7 @@ footer .contacts_social {
 }
 .wrapper .checkbox-circle label {
   cursor: pointer;
-  padding-left: 26px;
+  padding-right: 26px;
   color: #999;
   display: block;
   margin-bottom: 15px;
@@ -1282,7 +1289,7 @@ footer .contacts_social {
 .wrapper .checkbox-circle .checkmark {
   position: absolute;
   top: 11px;
-  left: 0;
+  right: 0;
   height: 14px;
   width: 14px;
   border-radius: 50%;
@@ -1292,7 +1299,7 @@ footer .contacts_social {
 .wrapper .checkbox-circle .checkmark:after {
   content: "";
   top: 6px;
-  left: 6px;
+  right: 6px;
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -1312,8 +1319,8 @@ footer .contacts_social {
 .wrapper .checkbox-circle .tooltip:before {
   content: "";
   border-bottom: 10px solid #f2f2f2;
-  border-right: 9px solid transparent;
   border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
   position: absolute;
   bottom: 100%;
 }
@@ -1347,7 +1354,7 @@ footer .contacts_social {
 }
 .wrapper .item .purchase {
   display: inline-block;
-  margin-left: 21px;
+  margin-right: 21px;
 }
 .wrapper .item .purchase h6 {
   font-size: 16px;
@@ -1365,7 +1372,7 @@ footer .contacts_social {
 }
 .wrapper .checkout span.heading {
   font-weight: 500;
-  margin-right: 5px;
+  margin-left: 5px;
 }
 .wrapper .checkout .subtotal {
   margin-bottom: 18px;
@@ -1374,7 +1381,7 @@ footer .contacts_social {
   margin-bottom: 19px;
 }
 .wrapper .checkout .shipping span.heading {
-  margin-right: 4px;
+  margin-left: 4px;
 }
 .wrapper .checkout .total-price {
   color: #333;
@@ -1410,7 +1417,7 @@ footer .contacts_social {
     height: 100vh;
   }
   .wrapper #wizard {
-    margin-right: 40px;
+    margin-left: 40px;
     min-height: 829px;
   }
 }
@@ -1422,9 +1429,9 @@ footer .contacts_social {
     display: none;
   }
   .wrapper #wizard {
-    margin-right: 0;
-    padding-left: 40px;
+    margin-left: 0;
     padding-right: 40px;
+    padding-left: 40px;
   }
 }
 @media (max-width: 767px) {
@@ -1448,11 +1455,11 @@ footer .contacts_social {
   }
   .wrapper .form-row.form-group .form-holder {
     width: 100%;
-    margin-right: 0;
+    margin-left: 0;
     margin-bottom: 24px;
   }
   .wrapper .item .purchase {
-    margin-left: 11px;
+    margin-right: 11px;
   }
 }
 .wrapper .card {
@@ -1531,7 +1538,7 @@ footer .contacts_social {
   color: #6645eb;
 }
 .wrapper .total {
-  float: right;
+  float: left;
   color: #6645eb;
 }
 .wrapper svg {
@@ -1640,7 +1647,7 @@ footer .contacts_social {
   border-radius: 5px;
   border: 2px solid var(--secondary_color);
   padding: 3px 20px;
-  margin-right: auto;
+  margin-left: auto;
   color: white;
   margin-top: 20px;
   display: block;
@@ -1651,7 +1658,7 @@ footer .contacts_social {
   background-color: transparent;
   min-width: 30px;
   margin: auto;
-  text-align: end;
+  text-align: start;
 }
 .products-cart table img {
   border: 1px solid rgb(197, 197, 197);
@@ -1682,7 +1689,7 @@ footer .contacts_social {
 .products-cart table p {
   font-size: 16px;
   font-weight: 500;
-  margin-right: 5px;
+  margin-left: 5px;
   color: #50504c;
 }
 .products-cart table input {
@@ -1758,7 +1765,7 @@ footer .contacts_social {
 }
 .sidebar ul {
   list-style-type: none;
-  margin-right: 10%;
+  margin-left: 10%;
 }
 .sidebar ul a {
   text-decoration: none;
@@ -1893,7 +1900,7 @@ h3.title {
     font-size: 20px !important;
   }
   .products-cart table th {
-    padding-right: 5px !important;
+    padding-left: 5px !important;
     text-align: center !important;
   }
   .products-cart table h3.h5 {
@@ -1958,10 +1965,10 @@ h3.title {
     color: white;
   }
   .owl-nav .owl-prev {
-    left: 0px !important;
+    right: 0px !important;
   }
   .owl-nav .owl-next {
-    right: 0px;
+    left: 0px;
   }
   h2.title, .suggested2 h3 {
     font-size: 30px !important;
